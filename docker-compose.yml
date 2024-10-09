@@ -1,6 +1,6 @@
 version: "1"
 services:
-  app: 
+  appReact: 
     build: .
     ports:
       - 3000:3000
