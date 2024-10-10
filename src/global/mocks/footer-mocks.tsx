@@ -1,6 +1,6 @@
+import { FiTwitter } from "react-icons/fi"; 
 import { AiOutlineInstagram } from "react-icons/ai";
 import { SlSocialYoutube } from "react-icons/sl";
-import { AiOutlineTwitter } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { IFootersLinks, ISocialLink } from "../interface/interface";
 
@@ -15,7 +15,7 @@ export const SocialLink: ISocialLink[] = [
 
     {
         id: 2,
-        icon: <AiOutlineTwitter />,
+        icon: <FiTwitter />,
         url: '/',
         name: 'twitter'
     },

@@ -6,8 +6,8 @@ import { FootersLinks, SocialLink } from '../../../global/mocks/footer-mocks'
 
 const Footer: React.FC = () => {
   return (
-    <footer className='container py-16 md:py-28 border-t border-gray-200'>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+    <footer className=' py-16 md:py-28 border-t border-t-gray-200 bg-blue-300'>
+      <div className="container grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
         <div className='flex flex-row md:flex-col gap-4 col-span-2 md:col-span-1 justify-between'>
           {/* Logo */}
           <Logo />
