@@ -1,7 +1,8 @@
 export interface ISocialLink {
     id: number,
     url: string,
-    icon: React.ReactElement
+    name: string,
+    icon: React.ReactElement,
 }
 
 export interface IFootersLinks {

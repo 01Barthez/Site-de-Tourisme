@@ -7,20 +7,20 @@ const FooterCol: React.FC<IFootersLinks> = (props) => {
     const id = useId();
 
     return (
-        <div className='capitalize space-y-2'>
+        <div className='capitalize text-nowrap space-y-2'>
             {/* Titre des liens */}
-            <h4 className="font-semibold">
+            <h4 className="font-bold text-lg text-foreground cursor-default">
                 {props.title}
             </h4>
 
             {/* Differents liens */}
-            <ul className="space-y-1">
+            <ul className="space-y-2 text-foreground2">
                 {
                     Tab.map((link) => (
                         <li key={id} className="">
                             <Link 
                             to={link.url}
-                            className=''
+                            className=' linkhover'
                             >
                                 {link.name}
                             </Link>

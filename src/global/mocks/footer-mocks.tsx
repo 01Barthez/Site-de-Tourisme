@@ -9,25 +9,29 @@ export const SocialLink: ISocialLink[] = [
     {
         id: 1,
         icon: <AiOutlineFacebook />,
-        url: '/'
+        url: '/',
+        name: 'facebook'
     },
 
     {
         id: 2,
         icon: <AiOutlineTwitter />,
-        url: '/'
+        url: '/',
+        name: 'twitter'
     },
 
     {
         id: 3,
-        icon: <SlSocialYoutube />,
-        url: '/'
+        icon: <AiOutlineInstagram />,
+        url: '/',
+        name: 'instagram'
     },
 
     {
         id: 4,
-        icon: <AiOutlineInstagram />,
-        url: '/'
+        icon: <SlSocialYoutube />,
+        url: '/',
+        name: 'Youtube'
     },
 ]
 

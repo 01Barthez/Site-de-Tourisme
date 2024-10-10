@@ -7,10 +7,8 @@ export default {
       center: true,
       padding: {
         DEFAULT: "2rem",
-        sm: "4rem",
-        md: "6rem",
-        lg: "8rem",
-        xl: "10rem",
+        md: "4rem",
+        xl: "8rem",
       },
     },
     extend: {
@@ -22,6 +20,7 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        foreground2: "hsl(var(--foreground2))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

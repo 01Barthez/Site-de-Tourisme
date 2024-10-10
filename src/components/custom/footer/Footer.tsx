@@ -6,39 +6,47 @@ import { FootersLinks, SocialLink } from '../../../global/mocks/footer-mocks'
 
 const Footer: React.FC = () => {
   return (
-    <footer className='container'>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {/* Logo */}
-        <div className=''>
+    <footer className='container py-16 md:py-28 border-t border-gray-200'>
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+        <div className='flex flex-row md:flex-col gap-4 col-span-2 md:col-span-1 justify-between'>
+          {/* Logo */}
           <Logo />
+
+          {/* Socials Links */}
+          <div className="justify-self-start flex items-start gap-4 md:flex-col">
+            {
+              SocialLink.map((link) => (
+                <Link
+                  key={link.id}
+                  to={link.url}
+                  className='text-foreground2 flex items-center gap-1 capitalize text-nowrap linkhover'
+                >
+                  <span className='text-2xl'>
+                    {link.icon}
+                  </span>
+                  <span className='hidden md:inline-block'>
+                    {link.name}
+                  </span>
+                </Link>
+              ))
+            }
+          </div>
         </div>
 
-        {/* Socials Links */}
-        <div className="flex items-center gap-4">
+
+        {/* Links */}
+        {/* <div className="flex"> */}
           {
-            SocialLink.map((link) => (
-              <Link
-                key={link.id}
-                to={link.url}
-                className=''
-              >
-                {link.icon}
-              </Link>
+            FootersLinks.map((Col) => (
+              <FooterCol
+                key={Col.id}
+                title={Col.title}
+                links={Col.links}
+              />
             ))
           }
         </div>
-
-        {/* Links */}
-        {
-          FootersLinks.map((Col) => (
-            <FooterCol
-              key={Col.id}
-              title={Col.title}
-              links={Col.links}
-            />
-          ))
-        }
-      </div>
+      {/* </div> */}
     </footer>
   )
 }
