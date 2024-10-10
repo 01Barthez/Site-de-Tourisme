@@ -19,17 +19,13 @@ export function ModeToggle() {
         variant='outline'
         size="icon"
         onClick={changeTheme}
-        className="hover:bg-gray-200"
+        className="border-none bg-transparent shadow-none rounded-full hover:bg-gray-100 dark:hover:bg-primary-foreground/10"
       >
         {
           isLight ?
-            <BsSun
-              className="h-[1.2rem] w-[1.2rem] scale-110 transition-all"
-            />
+            <BsSun className="h-[1.3rem] w-[1.3rem] transition-all"/>
             :
-            <BsFillMoonFill
-              className="absolute h-[1.2rem] w-[1.2rem] transition-all"
-            />
+            <BsFillMoonFill className="absolute h-[1.3rem] w-[1.3rem] transition-all"/>
         }
       </Button>
     </>
