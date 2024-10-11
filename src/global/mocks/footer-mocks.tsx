@@ -22,17 +22,18 @@ export const SocialLink: ISocialLink[] = [
 
     {
         id: 3,
+        icon: <SlSocialYoutube />,
+        url: '/',
+        name: 'Youtube'
+    },
+
+    {
+        id: 4,
         icon: <AiOutlineInstagram />,
         url: '/',
         name: 'instagram'
     },
 
-    {
-        id: 4,
-        icon: <SlSocialYoutube />,
-        url: '/',
-        name: 'Youtube'
-    },
 ]
 
 // Links of footer 

@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                   to={link.url}
                   className='text-foreground2 flex items-center gap-1 capitalize text-nowrap linkhover'
                 >
-                  <span className='text-2xl'>
+                  <span className='text-xl'>
                     {link.icon}
                   </span>
                   <span className='hidden md:inline-block'>

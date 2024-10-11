@@ -11,13 +11,25 @@ import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
 import ForgotPwd from "./pages/auth/ForgotPwd";
 
+
 const Router = createBrowserRouter([
     {
         path: "/",
         element: <>
             <Outlet />
-        </>
-        ,
+
+            {/* Portail pour le settings */}
+            <div className="hidden lg:block">
+                {
+                    createPortal(
+                        <ParamsBtn />,
+                        document.body
+                    )
+                }
+            </div>
+
+        </>,
+
         // Page erreur
         errorElement: <>
             <PageError />
@@ -31,21 +43,9 @@ const Router = createBrowserRouter([
                     <Navbar />
                     <Outlet />
                     {/* <Footer /> */}
-                    
-
-                    {/* Portail pour le settings */}
-                    <div className="hidden lg:block">
-                        {
-                            createPortal(
-                                <ParamsBtn />,
-                                document.body
-                            )
-                        }
-                    </div>
-
                 </>,
-                children: [
 
+                children: [
                     // First Home page
                     {
                         path: '',
@@ -81,7 +81,6 @@ const Router = createBrowserRouter([
                     <Footer />
                 </>,
                 children: [
-
                     // First Home page
                     {
                         path: 'login/',
@@ -108,8 +107,6 @@ const Router = createBrowserRouter([
                 ]
             },
         ]
-
-
     },
 ])
 
