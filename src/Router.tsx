@@ -7,6 +7,9 @@ import Home3 from "./pages/home/Home3";
 import Navbar from "./components/custom/navbar/Navbar";
 import Footer from "./components/custom/footer/Footer";
 import ParamsBtn from "./components/custom/portail/ParamsBtn";
+import Login from "./pages/auth/Login";
+import SignUp from "./pages/auth/SignUp";
+import ForgotPwd from "./pages/auth/ForgotPwd";
 
 const Router = createBrowserRouter([
     {
@@ -29,7 +32,7 @@ const Router = createBrowserRouter([
                     <Outlet />
                     {/* <Footer /> */}
                     
-                    
+
                     {/* Portail pour le settings */}
                     <div className="hidden lg:block">
                         {
@@ -64,6 +67,42 @@ const Router = createBrowserRouter([
                         path: 'home-3/',
                         element: <>
                             <Home3 />
+                        </>
+                    },
+                ]
+            },
+
+            // Managing Aythentifications pages
+            {
+                path: '',
+                element: <>
+                    <Navbar />
+                    <Outlet />
+                    {/* <Footer /> */}
+                </>,
+                children: [
+
+                    // First Home page
+                    {
+                        path: 'login/',
+                        element: <>
+                            <Login />
+                        </>
+                    },
+
+                    // Second Home page
+                    {
+                        path: 'signup/',
+                        element: <>
+                            <SignUp />
+                        </>
+                    },
+
+                    // First Home page
+                    {
+                        path: 'forgot-pwd/',
+                        element: <>
+                            <ForgotPwd />
                         </>
                     },
                 ]

@@ -1,14 +1,16 @@
 import React from 'react'
 import { Button } from '../../ui/button'
 import { ModeToggle } from "../ModeToogle";
-import UserAvatar from './subcompoments/UserAvatar';
 import Logo from '../Logo';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Navbar1: React.FC = () => {
+    const navigate = useNavigate();
+
     return (
-        <nav className='container'>
-            <div className="container py-4 flex justify-between">
+        <nav className=''>
+            <div className="relative container py-4 flex justify-between border-b border-gray-200">
                 {/* Left-side */}
                 <div className="flex items-center gap-8">
                     {/* Logo Parth */}
@@ -55,19 +57,18 @@ const Navbar1: React.FC = () => {
                         onClick={() => alert('hello')}
                     >
                         <div className="relative">
-                            <img
-                                src="/src/assets/icons/Bell.svg"
-                                alt="icon bell"
-                                className="h-[1.3rem] w-[1.3rem] object-contain"
-                            />
 
                             {/* Notification opened */}
                             <div className="absolute -top-1 -right-[2px] w-2 h-2 rounded-full bg-destructive"></div>
                         </div>
                     </Button>
 
-                    {/* USER ACCOUNT */}
-                    <UserAvatar />
+                    <Button
+                        className='rounded-full p-6 text-lg'
+                        onClick={() => navigate('/login')}
+                    >
+                        Sign up
+                    </Button>
                 </div>
             </div>
         </nav>

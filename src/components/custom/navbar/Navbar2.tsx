@@ -1,8 +1,14 @@
 import React from 'react'
+import { HiOutlineBell } from 'react-icons/hi'
+import UserAvatar from './subcompoments/UserAvatar'
 
-const Navbar2:React.FC = () => {
+const Navbar2: React.FC = () => {
   return (
-    <div>Navbar2</div>
+    <div>
+      <HiOutlineBell />
+      {/* USER ACCOUNT */}
+      <UserAvatar />
+    </div>
   )
 }
 
