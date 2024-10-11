@@ -14,17 +14,21 @@ import useDeviceWidth from '../../../hooks/useGetDeviceWith';
 import { Link } from "react-router-dom";
 import { ToggleGroup, ToggleGroupItem } from "../../ui/toggle-group";
 import { useSetNavbar } from "../../../hooks/useSetNavbar";
+import { useNavigate } from "react-router-dom";
 
 type Value = 'header1' | 'header2' | 'header3'
+type ValueHome = 'home1' | 'home2' | 'home3'
 
 const ParamsBtn: React.FC = () => {
     const deviceWidth = useDeviceWidth();
     const dropdownWidth = useMemo(() => deviceWidth / 3.3, [deviceWidth]);
     const [selectedValue, setSelectedValue] = useState<Value>('header1');
+    const [selectedHome, setSelectedHome] = useState<ValueHome>('home1');
     const { selected1, selected2, selected3 } = useSetNavbar();
+    const navigate = useNavigate();
 
     return (
-        <div className="hidden md:block absolute top-40 right-5">
+        <div className="absolute top-40 right-5">
             <DropdownMenu>
                 <DropdownMenuTrigger>
                     <Button
@@ -68,7 +72,7 @@ const ParamsBtn: React.FC = () => {
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base py-0 ${selectedValue === 'header1' ? 'bg-black/90 text-white hover:bg-black/85 hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header1' ? 'bg-black/90 text-white hover:bg-black/85 hover:text-white' : ''} `}
                                             onClick={selected1}
                                         >
                                             Header 1
@@ -78,7 +82,7 @@ const ParamsBtn: React.FC = () => {
                                     <ToggleGroupItem className="p-0 hover:bg-transparent" value="header2" aria-label="Toggle header2">
                                         <Button
                                             variant={'outline'}
-                                            className={`hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base py-0 ${selectedValue === 'header2' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header2' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
                                             onClick={selected2}
                                         >
                                             Header 2
@@ -88,7 +92,7 @@ const ParamsBtn: React.FC = () => {
                                     <ToggleGroupItem className="p-0 hover:bg-transparent" value="header3" aria-label="Toggle header3">
                                         <Button
                                             variant={'outline'}
-                                            className={`hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base py-0 ${selectedValue === 'header3' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header3' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
                                             onClick={selected3}
                                         >
                                             Header 3
@@ -108,37 +112,37 @@ const ParamsBtn: React.FC = () => {
 
                                 <ToggleGroup
                                     type="single"
-                                    value={selectedValue} onValueChange={(value: Value) => setSelectedValue(value)}
+                                    value={selectedHome} onValueChange={(value: ValueHome) => setSelectedHome(value)}
                                 >
                                     <ToggleGroupItem
                                         className="p-0 hover:bg-transparent"
-                                        value="header1"
-                                        aria-label="Toggle header1"
+                                        value="home1"
+                                        aria-label="Toggle home1"
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base py-0 ${selectedValue === 'header1' ? 'bg-black/90 text-white hover:bg-black/85 hover:text-white' : ''} `}
-                                            onClick={selected1}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home1' ? 'bg-black/90 text-white hover:bg-black/85 hover:text-white' : ''} `}
+                                            onClick={()=>navigate("/")}
                                         >
                                             Home Main
                                         </Button>
                                     </ToggleGroupItem>
 
-                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="header2" aria-label="Toggle header2">
+                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="home2" aria-label="Toggle home2">
                                         <Button
                                             variant={'outline'}
-                                            className={`hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base py-0 ${selectedValue === 'header2' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
-                                            onClick={selected2}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home2' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            onClick={()=>navigate("/home-2")}
                                         >
                                             Real Estate
                                         </Button>
                                     </ToggleGroupItem>
 
-                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="header3" aria-label="Toggle header3">
+                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="home3" aria-label="Toggle home3">
                                         <Button
                                             variant={'outline'}
-                                            className={`hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base py-0 ${selectedValue === 'header3' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
-                                            onClick={selected3}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home3' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            onClick={()=>navigate("/home-3")}
                                         >
                                             Home 3
                                         </Button>

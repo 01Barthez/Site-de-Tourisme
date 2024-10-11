@@ -26,15 +26,19 @@ const Router = createBrowserRouter([
                 path: '',
                 element: <>
                     <Navbar />
-                    {/* <Outlet /> */}
+                    <Outlet />
                     {/* <Footer /> */}
-
-                    {
-                        createPortal(
-                            <ParamsBtn />,
-                            document.body
-                        )
-                    }
+                    
+                    
+                    {/* Portail pour le settings */}
+                    <div className="hidden lg:block">
+                        {
+                            createPortal(
+                                <ParamsBtn />,
+                                document.body
+                            )
+                        }
+                    </div>
 
                 </>,
                 children: [
