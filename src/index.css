@@ -70,4 +70,10 @@
   .linkhover{
     @apply hover:text-foreground inline-block hover:translate-x-2 duration-300;
   }
+  .togglebtn {
+    @apply hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-sm font-medium;
+  }
+  .togglebtn[data-state="on"]{
+    @apply bg-foreground text-background;
+  }
 }

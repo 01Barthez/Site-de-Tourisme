@@ -60,11 +60,15 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
-
       fontFamily: {
         poppins: ["Poppins", "serif"],
       },
-
+      boxShadow: {
+        'custom': '0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)',
+      },
+      fontSize: {
+        portail: "1.7rem",
+      },
       keyframes: {
         "accordion-down": {
           from: {
