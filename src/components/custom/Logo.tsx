@@ -6,7 +6,7 @@ const Logo: React.FC = () => {
     return (
         <Link
             to="/"
-            className='inline-block w-24'
+            className='inline-block w-24 '
         >
             <img
                 src={LogoIcon}

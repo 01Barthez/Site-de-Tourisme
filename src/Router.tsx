@@ -72,13 +72,13 @@ const Router = createBrowserRouter([
                 ]
             },
 
-            // Managing Aythentifications pages
+            // Managing Authentifications pages
             {
                 path: '',
                 element: <>
                     <Navbar />
                     <Outlet />
-                    {/* <Footer /> */}
+                    <Footer />
                 </>,
                 children: [
 

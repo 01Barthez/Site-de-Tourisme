@@ -15,9 +15,7 @@ import { Link } from "react-router-dom";
 import { ToggleGroup, ToggleGroupItem } from "../../ui/toggle-group";
 import { useSetNavbar } from "../../../hooks/useSetNavbar";
 import { useNavigate } from "react-router-dom";
-
-type Value = 'header1' | 'header2' | 'header3'
-type ValueHome = 'home1' | 'home2' | 'home3'
+import { Value, ValueHome } from "../../../global/interface/interface";
 
 const ParamsBtn: React.FC = () => {
     const deviceWidth = useDeviceWidth();
