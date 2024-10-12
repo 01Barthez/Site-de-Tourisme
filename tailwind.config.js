@@ -64,7 +64,7 @@ export default {
         poppins: ["Poppins", "serif"],
       },
       boxShadow: {
-        'custom': '0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)',
+        custom: "0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)",
       },
       fontSize: {
         portail: "1.7rem",
@@ -86,8 +86,28 @@ export default {
             height: "0",
           },
         },
+        incommingBox: {
+          from: {
+            opacity: "0",
+            transform: "translateX(350px)",
+          },
+          to: {
+            transform: "translateX(0)",
+            opacity: "100",
+          },
+        },
+        incommingErrorMSG: {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "100",
+          },
+        },
       },
       animation: {
+        "incommingBox": 'incommingBox 0.5s ease-out',
+        "incommingErrorMSG": 'incommingErrorMSG 0.5s ease-in',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

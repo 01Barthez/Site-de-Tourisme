@@ -33,7 +33,6 @@ export const SocialLink: ISocialLink[] = [
         url: '/',
         name: 'instagram'
     },
-
 ]
 
 // Links of footer 

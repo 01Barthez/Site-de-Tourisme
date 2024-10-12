@@ -19,3 +19,4 @@ const useDeviceWidth = () => {
 };
 
 export default useDeviceWidth;
+

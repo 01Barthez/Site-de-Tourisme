@@ -5,9 +5,7 @@ import { Button } from '../../ui/button'
 
 const Navbar2: React.FC = () => {
   return (
-    <div>
-
-      
+    <div>      
       {/* Notification button */}
       <Button
         variant='outline'

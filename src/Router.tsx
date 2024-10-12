@@ -4,13 +4,13 @@ import PageError from "./pages/errors/PageError";
 import Home1 from "./pages/home/Home1";
 import Home2 from "./pages/home/Home2";
 import Home3 from "./pages/home/Home3";
-import Navbar from "./components/custom/navbar/Navbar";
 import Footer from "./components/custom/footer/Footer";
 import ParamsBtn from "./components/custom/portail/ParamsBtn";
+import ForgotPwd from "./pages/auth/ForgotPwd";
+import Navbar from "./components/custom/navbar/Navbar";
+import Stay from "./pages/Stay";
 import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
-import ForgotPwd from "./pages/auth/ForgotPwd";
-import Stay from "./pages/Stay";
     
 
 const Router = createBrowserRouter([

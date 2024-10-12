@@ -31,7 +31,7 @@ const ParamsBtn: React.FC = () => {
                 <DropdownMenuTrigger>
                     <Button
                         variant={'outline'}
-                        className='w-auto h-auto p-[.9rem] text-[1.62rem] rounded-xl shadow-lg'
+                        className='w-auto h-auto p-[.9rem] text-[1.62rem] rounded-xl shadow-lg bg-background dark:bg-primary'
                     >
                         <FiSettings />
                     </Button>

@@ -9,12 +9,12 @@ const FooterCol: React.FC<IFootersLinks> = (props) => {
     return (
         <div className='capitalize text-nowrap space-y-2'>
             {/* Titre des liens */}
-            <h4 className="font-bold text-lg text-foreground cursor-default">
+            <h4 className="font-bold text-base md:text-lg text-foreground cursor-default">
                 {props.title}
             </h4>
 
             {/* Differents liens */}
-            <ul className="space-y-2 text-foreground2">
+            <ul className="space-y-2 text-foreground2 text-sm md:text-base">
                 {
                     Tab.map((link) => (
                         <li key={id} className="">
