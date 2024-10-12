@@ -19,7 +19,7 @@ export function ModeToggle() {
         variant='outline'
         size="icon"
         onClick={changeTheme}
-        className='group text-xl border-none shadow-none h-auto w-auto p-4 rounded-full duration-200 transition-all dark:hover:bg-primary-foreground/10'
+        className='bg-transparent group text-xl border-none shadow-none h-auto w-auto p-4 rounded-full duration-200 transition-all dark:hover:bg-primary-foreground/10'
         >
         {
           isLight ?

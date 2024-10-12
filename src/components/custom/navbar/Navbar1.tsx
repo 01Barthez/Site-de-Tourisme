@@ -584,7 +584,7 @@ const Navbar1: React.FC = () => {
                     {/* Search Icon */}
                     <Button
                         variant={'outline'}
-                        className='group text-xl border-none shadow-none h-auto w-auto p-4 rounded-full duration-200 transition-all dark:hover:bg-primary-foreground/10'
+                        className='bg-transparent group text-xl border-none shadow-none h-auto w-auto p-4 rounded-full duration-200 transition-all dark:hover:bg-primary-foreground/10'
                         onClick={handleVisibility}
                     >
                         <BsSearch className="rotate-90 group-hover:rotate-[65deg] duration-500" />
@@ -594,32 +594,30 @@ const Navbar1: React.FC = () => {
                     {
                         hiddenSearchBar ? '' :
                             <form
-                                className="absolute -bottom-14 right-0 min-w-80 bg-card"
+                                className="flex items-center  absolute -bottom-16 border-4 border-primary/30 right-0 min-w-96 bg-card  overflow-hidden rounded-full px-2 py-1 "
                                 data-aos='zoom-in-up'
                                 data-aos-duration="300"
                                 onSubmit={() => handleSubmitSearch}
                             >
-                                <div className="flex items-center outline-primary/30 outline rounded-full">
-                                    {/* search Input */}
-                                    <Input
-                                        type='search'
-                                        placeholder="Type and press enter..."
-                                        required
-                                        value={searchText}
-                                        onChange={handleSearchText}
-                                        className="w-full border-none shadow-none placeholder:text-sm text-base tracking-wide outline-none focus-visible:ring-0"
-                                    />
+                                {/* search Input */}
+                                <Input
+                                    type='search'
+                                    placeholder="Type and press enter..."
+                                    required
+                                    value={searchText}
+                                    onChange={handleSearchText}
+                                    className="w-full border-none shadow-none placeholder:text-sm text-base tracking-wide outline-none focus-visible:ring-0"
+                                />
 
-                                    {/* Submit button */}
-                                    <Button
-                                        variant={'secondary'}
-                                        size={'icon'}
-                                        className="border-none shadow-none bg-transparent text-lg hover:bg-transparent"
-                                        type='button'
-                                    >
-                                        <BsSearch />
-                                    </Button>
-                                </div>
+                                {/* Submit button */}
+                                <Button
+                                    variant={'secondary'}
+                                    size={'icon'}
+                                    className="border-none shadow-none bg-transparent text-lg hover:bg-transparent"
+                                    type='button'
+                                >
+                                    <BsSearch />
+                                </Button>
                             </form>
                     }
                 </div>

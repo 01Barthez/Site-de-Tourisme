@@ -10,6 +10,7 @@ import ParamsBtn from "./components/custom/portail/ParamsBtn";
 import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
 import ForgotPwd from "./pages/auth/ForgotPwd";
+import Stay from "./pages/Stay";
     
 
 const Router = createBrowserRouter([
@@ -63,6 +64,14 @@ const Router = createBrowserRouter([
                         path: 'home-3/',
                         element: <>
                             <Home3 />
+                        </>
+                    },
+
+                       // First Home page
+                       {
+                        path: 'stay/',
+                        element: <>
+                            <Stay/>
                         </>
                     },
                 ]
