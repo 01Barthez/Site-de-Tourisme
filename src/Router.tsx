@@ -10,24 +10,20 @@ import ParamsBtn from "./components/custom/portail/ParamsBtn";
 import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
 import ForgotPwd from "./pages/auth/ForgotPwd";
-
+    
 
 const Router = createBrowserRouter([
     {
         path: "/",
         element: <>
             <Outlet />
-
-            {/* Portail pour le settings */}
-            <div className="hidden lg:block">
-                {
-                    createPortal(
-                        <ParamsBtn />,
-                        document.body
-                    )
-                }
-            </div>
-
+            {
+                // Portail pour le settings
+                createPortal(
+                    <ParamsBtn />,
+                    document.body
+                )
+            }
         </>,
 
         // Page erreur
@@ -42,7 +38,7 @@ const Router = createBrowserRouter([
                 element: <>
                     <Navbar />
                     <Outlet />
-                    {/* <Footer /> */}
+                    <Footer />
                 </>,
 
                 children: [

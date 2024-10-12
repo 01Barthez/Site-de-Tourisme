@@ -11,19 +11,19 @@ const Navbar: React.FC = () => {
     const { selectedNav } = useSetNavbar();
 
     return (
-        <div>
+        <nav className='sticky top-0 left-0 w-screen backdrop-blur-md'>
             {/* NavBar for small screens */}
             <div className="md:hidden">
                 <SmallUpNavbar />
             </div>
 
             {/* NavBar for large screens */}
-            <div className="hidden md:block">
+            <div className="hidden md:block px-4  border-b border-gray-100">
                 {
                     selectedNav === "nav1" ? (<Navbar1 />) : (selectedNav === "nav2" ? (<Navbar2 />) : (<Navbar3 />))
                 }
             </div>
-        </div>
+        </nav>
     )
 }
 

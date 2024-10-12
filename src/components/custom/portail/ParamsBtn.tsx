@@ -1,5 +1,5 @@
-import { AiOutlineShopping } from "react-icons/ai";
 import React, { useMemo, useState } from 'react'
+import { AiOutlineShopping } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
 import {
     DropdownMenu,
@@ -26,7 +26,7 @@ const ParamsBtn: React.FC = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="absolute top-40 right-5">
+        <div className='hidden lg:block absolute top-40 right-5'>
             <DropdownMenu>
                 <DropdownMenuTrigger>
                     <Button
@@ -120,7 +120,7 @@ const ParamsBtn: React.FC = () => {
                                         <Button
                                             variant={'outline'}
                                             className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home1' ? 'bg-black/90 text-white hover:bg-black/85 hover:text-white' : ''} `}
-                                            onClick={()=>navigate("/")}
+                                            onClick={() => navigate("/")}
                                         >
                                             Home Main
                                         </Button>
@@ -130,7 +130,7 @@ const ParamsBtn: React.FC = () => {
                                         <Button
                                             variant={'outline'}
                                             className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home2' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
-                                            onClick={()=>navigate("/home-2")}
+                                            onClick={() => navigate("/home-2")}
                                         >
                                             Real Estate
                                         </Button>
@@ -140,7 +140,7 @@ const ParamsBtn: React.FC = () => {
                                         <Button
                                             variant={'outline'}
                                             className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home3' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
-                                            onClick={()=>navigate("/home-3")}
+                                            onClick={() => navigate("/home-3")}
                                         >
                                             Home 3
                                         </Button>
