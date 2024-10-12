@@ -3,8 +3,7 @@ import Logo from '../Logo'
 
 const Navbar3: React.FC = () => {
   return (
-    <nav className='w-full'>
-      <div className="relative px-4 py-4 flex justify-between items-center border-b border-gray-100">
+      <div className=" flex justify-between items-center">
         {/* Left-side */}
         <div className="flex items-center gap-8">
           {/* Logo Parth */}
@@ -16,7 +15,6 @@ const Navbar3: React.FC = () => {
 
         </div>
       </div>
-    </nav>
   )
 }
 
