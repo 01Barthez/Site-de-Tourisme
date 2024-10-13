@@ -18,6 +18,7 @@ import { REGEX_Password } from "../../global/constant/Constant"
 import { toast } from "../../hooks/use-toast"
 import { useNavigate } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"
+import SeparatorLine from "../../components/custom/SeparatorLine"
 
 const formSchema = z.object({
   email: z.string().email({
@@ -77,11 +78,7 @@ const Login: React.FC = () => {
           <ConnexionsMethods />
 
           {/*  Separator Line */}
-          <div className="flex items-center gap-2 mx-auto">
-            <div className="w-full border border-foreground/20"></div>
-            <div className="text-lg font-medium">OR</div>
-            <div className="w-full border border-foreground/20"></div>
-          </div>
+          <SeparatorLine/>
 
           {/* Formulmire de connecion */}
           <Form {...form}>

@@ -575,7 +575,7 @@ const Navbar1: React.FC = () => {
             </div>
 
             {/* Right-side */}
-            <div className="flex itesm-center">
+            <div className="flex itesm-center gap-1">
                 {/* Toggle Theme Button */}
                 <ModeToggle />
 

@@ -18,6 +18,7 @@ import { REGEX_Password } from "../../global/constant/Constant"
 import { toast } from "../../hooks/use-toast"
 import { useNavigate } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"
+import SeparatorLine from "../../components/custom/SeparatorLine"
 
 const formSchema = z.object({
   email: z.string().email({
@@ -57,8 +58,8 @@ const SignUp: React.FC = () => {
   return (
 
     <>
-      <div 
-      className="animate-incommingBox text-foreground w-fit mx-auto flex flex-col items-center gap-8 md:gap-16 bg-card shadow rounded-3xl my-8 md:my-16 py-8 md:py-16 px-2 md:px-20"
+      <div
+        className="animate-incommingBox text-foreground w-fit mx-auto flex flex-col items-center gap-8 md:gap-16 bg-card shadow rounded-3xl my-8 md:my-16 py-8 md:py-16 px-2 md:px-20"
       >
         {/* Header Section */}
         <div className="flex items-center text-center flex-col gap-5">
@@ -77,11 +78,7 @@ const SignUp: React.FC = () => {
           <ConnexionsMethods />
 
           {/*  Separator Line */}
-          <div className="flex items-center gap-2 mx-auto">
-            <div className="w-full border border-foreground/20"></div>
-            <div className="text-lg font-medium">OR</div>
-            <div className="w-full border border-foreground/20"></div>
-          </div>
+          <SeparatorLine />
 
           {/* Formulmire de connecion */}
           <Form {...form}>
@@ -97,8 +94,8 @@ const SignUp: React.FC = () => {
                       </FormLabel>
 
                       <FormControl
-                          className={`rounded-2xl border ${isFocused ? 'outline-4 outline-primary/60' : 'outline-none'} shadow-none`}
-                          >
+                        className={`rounded-2xl border ${isFocused ? 'outline-4 outline-primary/60' : 'outline-none'} shadow-none`}
+                      >
                         <Input
                           placeholder="example@example.com"
                           type="text"
@@ -112,7 +109,7 @@ const SignUp: React.FC = () => {
                           onBlur={() => {
                             field.onBlur();
                             setIsFocused(false);
-                            }}
+                          }}
                         />
                       </FormControl>
                       <FormMessage className="absolute" />

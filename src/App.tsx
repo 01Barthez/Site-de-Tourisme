@@ -11,7 +11,7 @@ import { Toaster } from './components/ui/toaster';
 const App: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      offset: 100,
+      offset: 50,
       duration: 700,
       easing: 'ease',
       delay: 100,
@@ -23,7 +23,6 @@ const App: React.FC = () => {
   return (
     <ThemeProvider defaultTheme='light' storageKey="vite-ui-theme">
       <RouterProvider router={Router} />
-
       <Toaster />
     </ThemeProvider>
   )

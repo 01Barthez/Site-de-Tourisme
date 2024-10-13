@@ -11,9 +11,26 @@ export interface ISocialLink {
 export interface IFootersLinks {
     id?: number,
     title: string,
-    links: {
+    links: { // For differents links
         url: string;
         name: string;
     }[],
 }
+
+// For place to discorver
+export interface IPlaceDiscorvery {
+    id: number;
+    url: string; //To indicate where we will be redirect after click on image box
+    image: string; // For image links
+    name: string;
+    properties_number: number;
+}
+
+export interface ICardSuggestionDiscorvery {
+    url: string; 
+    image: string;
+    name: string;
+    properties_number: number;
+}
+
 

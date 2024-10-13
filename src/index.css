@@ -76,4 +76,13 @@
   .togglebtn[data-state="on"]{
     @apply bg-foreground text-background;
   }
+  .flexContent{
+    @apply flex flex-col gap-4;
+  }
+  h2.title{
+    @apply text-3xl md:text-4xl font-semibold;
+  }
+  p.para{
+    @apply text-base md:text-lg text-foreground/70;
+  }
 }

@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     const { selectedNav } = useSetNavbar();
 
     return (
-        <nav className='sticky z-50 top-0 left-0 w-screen backdrop-blur-md bg-background/80'>
+        <nav className='container sticky z-50 top-0 left-0 w-screen backdrop-blur-md bg-background/80'>
             {/* NavBar for small screens */}
             <div className="md:hidden">
                 <SmallUpNavbar />
