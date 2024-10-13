@@ -32,10 +32,10 @@ const JoinNewsLetter: React.FC = () => {
   }
 
   return (
-    <section className='container py-10 md:py-16 '>
+    <section className='container py-16 '>
       <div className="flex items-center gap-10 flex-col lg:flex-row">
         {/* Detail content part */}
-        <div data-aos="fade-right" className="max-w-[35%]  w-full space-y-10 md:space-y-14">
+        <div data-aos="fade-right" className="max-w-full lg:max-w-[35%]  w-full space-y-10 md:space-y-14">
           {/* Header part */}
           <div className="flex flex-col gap-2 md:gap-5">
             <h2 className="title">
@@ -66,8 +66,7 @@ const JoinNewsLetter: React.FC = () => {
             />
           </div>
 
-          {/* Form Part */}
-          {/* Formulmire de connecion */}
+          {/* Formulmire d'abonnement */}
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
               <div className="w-fit border p-1 rounded-full flex items-center gap-1">

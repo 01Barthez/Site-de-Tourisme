@@ -49,3 +49,15 @@ export interface ICardAdvantages {
     }
     content: string;
 }
+
+export interface ICardExploreNearby {
+    url: string;
+    image: string;
+    name: string;
+    delay: number;
+    visit: number;
+}
+
+export interface IGridContentBox {
+    TableToMap: ICardExploreNearby[];
+}

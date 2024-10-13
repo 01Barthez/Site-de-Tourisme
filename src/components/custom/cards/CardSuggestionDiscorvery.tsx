@@ -6,7 +6,7 @@ const CardSuggestionDiscorvery: React.FC<ICardSuggestionDiscorvery> = (props) =>
     return (
         <Link to={props.url} className='outline-none focus:border-none'>
             <div className='flex flex-col gap-2'>
-                <div className="group max-w-90 h-64 rounded-2xl overflow-hidden bg-foreground">
+                <div className="group max-w-80 h-64 rounded-2xl overflow-hidden bg-foreground">
                     <img
                         src={props.image}
                         alt={`Preview ${props.name}`}

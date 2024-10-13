@@ -15,7 +15,7 @@ const HappeningsCity: React.FC = () => {
         </div>
 
         {/* Detail content part */}
-        <div className="max-w-[35%]  w-full space-y-10 md:space-y-14 px-4">
+        <div className="max-w-full lg:max-w-[35%]  w-full space-y-10 md:space-y-14 px-4">
           {/* Header part */}
           <div className="flex flex-col gap-2 md:gap-5">
             <span className="text-sm text-foreground/50 uppercase">
@@ -28,7 +28,7 @@ const HappeningsCity: React.FC = () => {
           </div>
 
           {/* Content */}
-          <div className="flex flex-col gap-5 md:gap-10">
+          <div className="flex flex-col gap-8 md:gap-10">
             <CardBenefits
               badge={{
                 content: 'Advertising',

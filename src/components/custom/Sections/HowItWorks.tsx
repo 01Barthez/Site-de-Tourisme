@@ -16,7 +16,7 @@ const HowItWorks: React.FC = () => {
       </div>
 
       {/* Contain section */}
-      <div className="relative w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-2 md:gap-x-3 lg:gap-x-4 lg:grid-cols-3 place-items-center">
+      <div className="relative w-full mx-auto grid grid-cols-1 gap-y-16 md:grid-cols-2 gap-x-2 md:gap-x-3 lg:gap-x-4 lg:grid-cols-3 place-items-center">
         <CardHowItWork
           image='/public/howt_it_works_step1.png'
           title='Book & relax'
@@ -36,7 +36,7 @@ const HowItWorks: React.FC = () => {
         />
 
         {/* Line */}
-        <div className="absolute w-full top-6 left-0 -z-10">
+        <div className="hidden md:block absolute w-full top-6 left-0 -z-10">
           <img
             src="/src/assets/line.svg"
             alt=""
