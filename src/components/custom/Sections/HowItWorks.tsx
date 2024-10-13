@@ -22,28 +22,27 @@ const HowItWorks: React.FC = () => {
           title='Book & relax'
           description='Let each trip be an inspirational journey, each room a peaceful space'
         />
-         
-         <CardHowItWork
+
+        <CardHowItWork
           image='/public/howt_it_works_step1.png'
           title='Smart checklist'
           description='Let each trip be an inspirational journey, each room a peaceful space'
         />
-         
-         <CardHowItWork
+
+        <CardHowItWork
           image='/public/howt_it_works_step1.png'
           title='Save more'
           description='Let each trip be an inspirational journey, each room a peaceful space'
         />
-      
-      {/* Line */}
-      <div className="absolute w-full top-6 left-0 -z-10">
-        <img 
-        src="/src/assets/line.svg" 
-        alt="" 
-        className="w-full" 
-        />
-        {/* <div className="w-full h-1 bg-foreground/60"></div> */}
-      </div>
+
+        {/* Line */}
+        <div className="absolute w-full top-6 left-0 -z-10">
+          <img
+            src="/src/assets/line.svg"
+            alt=""
+            className="w-full"
+          />
+        </div>
       </div>
     </section>
   )

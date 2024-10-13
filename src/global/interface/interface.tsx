@@ -41,3 +41,11 @@ export interface ICardBenefits {
     name: string;
     content: string;
 }
+
+export interface ICardAdvantages {
+    badge: {
+        content: string;
+        variant?: 'blue' | 'green' | 'red';
+    }
+    content: string;
+}

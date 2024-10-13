@@ -4,16 +4,18 @@ import SwipperCarousel from '../SwipperCarousel'
 
 const Suggestions: React.FC = () => {
   return (
-    <section className='container flexContent py-10 md:py-16'>
+    <section className='container py-10 md:py-16 space-y-10'>
       {/* Title header */}
-      <h2 className="title">
-        Suggestions for discovery
-      </h2>
+      <div className="flexContent">
+        <h2 className="title">
+          Suggestions for discovery
+        </h2>
 
-      {/* Paragraph header */}
-      <p className="para">
-        Popular places to recommends for you
-      </p>
+        {/* Paragraph header */}
+        <p className="para">
+          Popular places to recommends for you
+        </p>
+      </div>
 
       {/* Slider Content */}
       <SwipperCarousel content={placeDiscorvery} />

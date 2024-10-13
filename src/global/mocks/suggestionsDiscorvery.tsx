@@ -3,7 +3,7 @@ import { IPlaceDiscorvery } from "../interface/interface";
 export const placeDiscorvery: IPlaceDiscorvery[] = [
     {
         id: 1,
-        image: "/public/Image.svg",
+        image: "/src/assets/discover1.svg",
         url: '/listing-stay-map',
         name: "New York",
         properties_number: 188288
@@ -19,7 +19,7 @@ export const placeDiscorvery: IPlaceDiscorvery[] = [
 
     {
         id: 3,
-        image: "/public/Image.svg",
+        image: "/src/assets/discover1.svg",
         url: '/listing-stay-map',
         name: "Paris",
         properties_number: 188288
@@ -35,7 +35,7 @@ export const placeDiscorvery: IPlaceDiscorvery[] = [
 
     {
         id: 5,
-        image: "/public/Image.svg",
+        image: "/src/assets/discover1.svg",
         url: '/listing-stay-map',
         name: "Tokyo",
         properties_number: 188288

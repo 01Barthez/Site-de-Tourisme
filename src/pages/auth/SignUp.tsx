@@ -14,20 +14,12 @@ import { Button } from "../../components/ui/button"
 import { Input } from "../../components/ui/input"
 import ConnexionsMethods from "../../components/custom/ConnexionsMethods"
 import { Link } from "react-router-dom"
-import { REGEX_Password } from "../../global/constant/Constant"
 import { toast } from "../../hooks/use-toast"
 import { useNavigate } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"
 import SeparatorLine from "../../components/custom/SeparatorLine"
+import { formSchema } from "../../global/constant/Constant"
 
-const formSchema = z.object({
-  email: z.string().email({
-    message: "Should be a correct email !"
-  }),
-  password: z.string().regex(REGEX_Password, {
-    message: "Should be a correct password !"
-  })
-})
 
 const SignUp: React.FC = () => {
   const navigate = useNavigate();
@@ -48,7 +40,7 @@ const SignUp: React.FC = () => {
         <p><b>Password</b> : {values.password} </p>
       </>,
       duration: 2500,
-      className: 'bg-card/80 shadow shadow-primary'
+      className: 'bg-card/95 shadow shadow-primary'
     })
 
     navigate("/");
@@ -98,7 +90,7 @@ const SignUp: React.FC = () => {
                       >
                         <Input
                           placeholder="example@example.com"
-                          type="text"
+                          type="email"
                           required
                           minLength={2}
                           maxLength={75}
@@ -112,7 +104,7 @@ const SignUp: React.FC = () => {
                           }}
                         />
                       </FormControl>
-                      <FormMessage className="absolute" />
+                      <FormMessage className="absolute animate-incommingErrorMSG" />
                     </FormItem>
                   )}
                 />
