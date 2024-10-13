@@ -33,4 +33,11 @@ export interface ICardSuggestionDiscorvery {
     properties_number: number;
 }
 
-
+export interface ICardBenefits {
+    badge: {
+        content: string;
+        variant?: 'blue' | 'green' | 'red';
+    }
+    name: string;
+    content: string;
+}

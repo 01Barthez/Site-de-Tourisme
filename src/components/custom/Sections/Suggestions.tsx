@@ -4,7 +4,7 @@ import SwipperCarousel from '../SwipperCarousel'
 
 const Suggestions: React.FC = () => {
   return (
-    <section className='container flexContent py-10'>
+    <section className='container flexContent py-10 md:py-16'>
       {/* Title header */}
       <h2 className="title">
         Suggestions for discovery
