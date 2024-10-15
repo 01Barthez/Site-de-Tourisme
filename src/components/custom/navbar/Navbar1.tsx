@@ -52,7 +52,7 @@ const Navbar1: React.FC = () => {
                         {/* Search Icon */}
                         <Button
                             variant={'outline'}
-                            className='bg-transparent group text-xl border-none shadow-none h-auto w-auto p-4 rounded-full duration-200 transition-all dark:hover:bg-primary-foreground/10'
+                            className='bg-transparent group text-xl border-none shadow-none h-auto w-auto p-3 rounded-full duration-200 hover:bg-foreground/5'
                             onClick={handleVisibility}
                         >
                             <BsSearch className="rotate-90 group-hover:rotate-[65deg] duration-500" />

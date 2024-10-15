@@ -16,9 +16,15 @@ const UserAvatar: React.FC = () => {
         <>
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <Avatar className="rounded-full w-8 h-8">
-                        <AvatarImage src="/src/assets/userProfile.svg" />
-                        <AvatarFallback>CN</AvatarFallback>
+                    <Avatar className="rounded-full w-auto h-auto p-1 hover:bg-foreground/5 duration-300">
+                        <AvatarImage
+                            src="/src/assets/userProfile.svg"
+                            alt='profile Barthez'
+                            className='w-9 h-9 object-cover'
+                        />
+                        <AvatarFallback className='w-9 h-9'>
+                            CN
+                        </AvatarFallback>
                     </Avatar>
 
                 </DropdownMenuTrigger>

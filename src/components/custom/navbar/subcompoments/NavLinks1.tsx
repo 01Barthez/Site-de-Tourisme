@@ -18,7 +18,7 @@ const NavLinks1: React.FC = () => {
                     </Link>
                 </HoverCardTrigger>
 
-                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3.5 left-40 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
+                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3 left-40 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
                     <ul className="flex flex-col">
                         <li className="w-full">
                             <Link
@@ -74,7 +74,7 @@ const NavLinks1: React.FC = () => {
                     </Link>
                 </HoverCardTrigger>
 
-                <HoverCardContent className='absolute -left-60 bg-card text-card-foreground w-fit min-w-52 mt-3.5 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
+                <HoverCardContent className='absolute -left-60 bg-card text-card-foreground w-fit min-w-52 mt-3 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
                     <ul className="flex gap-5">
                         {/* Col 1 */}
                         <li className="w-full">
@@ -426,7 +426,7 @@ const NavLinks1: React.FC = () => {
                     </Link>
                 </HoverCardTrigger>
 
-                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3.5 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
+                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
                     <ul className="flex flex-col">
                         {/* Sublink 1 */}
                         <li className="w-full relative group">
@@ -628,7 +628,7 @@ const NavLinks1: React.FC = () => {
                     </Link>
                 </HoverCardTrigger>
 
-                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3.5 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
+                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
                     <ul className="flex flex-col">
                         <li className="w-full relative group">
                             <HoverCard>
@@ -798,7 +798,7 @@ const NavLinks1: React.FC = () => {
                     </Link>
                 </HoverCardTrigger>
 
-                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3.5 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
+                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
                     <ul className="flex flex-col">
                         <li className="w-full">
                             <Link
