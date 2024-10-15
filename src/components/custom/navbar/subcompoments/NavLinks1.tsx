@@ -5,7 +5,7 @@ import { FiChevronDown } from 'react-icons/fi'
 
 const NavLinks1: React.FC = () => {
     return (
-        <ul className="flex items-center gap-2">
+        <ul className="relative flex items-center gap-2">
             {/* Link 1 */}
             <HoverCard>
                 <HoverCardTrigger >
@@ -18,7 +18,7 @@ const NavLinks1: React.FC = () => {
                     </Link>
                 </HoverCardTrigger>
 
-                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3.5 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
+                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3.5 left-40 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
                     <ul className="flex flex-col">
                         <li className="w-full">
                             <Link
@@ -38,7 +38,7 @@ const NavLinks1: React.FC = () => {
                                     Real Estate
                                 </span>
 
-                                <span className="bg-red-500 text-destructive-foreground text-[10px] py-[2px] px-1 rounded-sm">
+                                <span className="bg-red-500 dark:bg-red-700 text-destructive-foreground text-[10px] py-[2px] px-1 rounded-sm">
                                     New!
                                 </span>
                             </Link>
@@ -53,7 +53,7 @@ const NavLinks1: React.FC = () => {
                                     Home 3
                                 </span>
 
-                                <span className="bg-red-500 text-destructive-foreground text-[10px] py-[2px] px-1 rounded-sm">
+                                <span className="bg-red-500 dark:bg-red-700 text-destructive-foreground text-[10px] py-[2px] px-1 rounded-sm">
                                     New!
                                 </span>
                             </Link>
@@ -74,8 +74,343 @@ const NavLinks1: React.FC = () => {
                     </Link>
                 </HoverCardTrigger>
 
-                <HoverCardContent className='bg-card text-card-foreground w-fit min-w-52 mt-3.5 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
-                    Hello, I'm Barthez, and I'm a smart boy who can do what he want ...
+                <HoverCardContent className='absolute -left-60 bg-card text-card-foreground w-fit min-w-52 mt-3.5 px-2 py-6 shadow shadow-foreground/15 border border-foreground/15 rounded'>
+                    <ul className="flex gap-5">
+                        {/* Col 1 */}
+                        <li className="w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {/* Header Part */}
+                                <div className="flex flex-col gap-2">
+                                    {/* Picture */}
+                                    <div className="w-40 h-24 rounded-lg overflow-hidden">
+                                        <img
+                                            src="/linkImage1.svg"
+                                            alt="city to visit"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+
+                                    {/* Name */}
+                                    <h6 className="font-medium px-2.5 ">
+                                        Company
+                                    </h6>
+                                </div>
+
+                                {/* Links */}
+                                <ul className="flex flex-col gap-1 text-foreground/80 text-sm">
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Katz
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Livefish
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Digitube
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Midel
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Rhyloo
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Innojam
+                                    </Link>
+                                </ul>
+                            </div>
+                        </li>
+
+                        {/* Col 2 */}
+                        <li className="w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {/* Header Part */}
+                                <div className="flex flex-col gap-2">
+                                    {/* Picture */}
+                                    <div className="w-40 h-24 rounded-lg overflow-hidden">
+                                        <img
+                                            src="/linkImage1.svg"
+                                            alt="city to visit"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+
+                                    {/* Name */}
+                                    <h6 className="font-medium">
+                                        App Name
+                                    </h6>
+                                </div>
+
+                                {/* Links */}
+                                <ul className="flex flex-col gap-1 text-foreground/80 text-sm">
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Tresom
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Hatity
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Otcom
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Daltfresh
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Duobam
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Mat Lam Tam
+                                    </Link>
+                                </ul>
+                            </div>
+                        </li>
+
+                        {/* Col 3 */}
+                        <li className="w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {/* Header Part */}
+                                <div className="flex flex-col gap-2">
+                                    {/* Picture */}
+                                    <div className="w-40 h-24 rounded-lg overflow-hidden">
+                                        <img
+                                            src="/linkImage1.svg"
+                                            alt="city to visit"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+
+                                    {/* Name */}
+                                    <h6 className="font-medium">
+                                        City
+                                    </h6>
+                                </div>
+
+                                {/* Links */}
+                                <ul className="flex flex-col gap-1 text-foreground/80 text-sm">
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Nezamyslice
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Herzliyya
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Hongqi
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Kamakura
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Yahil’nytsya
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Mandalay
+                                    </Link>
+                                </ul>
+                            </div>
+                        </li>
+
+                        {/* Col 4 */}
+                        <li className="w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {/* Header Part */}
+                                <div className="flex flex-col gap-2">
+                                    {/* Picture */}
+                                    <div className="w-40 h-24 rounded-lg overflow-hidden">
+                                        <img
+                                            src="/linkImage1.svg"
+                                            alt="city to visit"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+
+                                    {/* Name */}
+                                    <h6 className="font-medium">
+                                        Contruction
+                                    </h6>
+                                </div>
+
+                                {/* Links */}
+                                <ul className="flex flex-col gap-1 text-foreground/80 text-sm">
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Plexiglass
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Plexiglass
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Stone
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Granite
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Glass
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Plexiglass
+                                    </Link>
+                                </ul>
+                            </div>
+                        </li>
+
+                        {/* Col 5 */}
+                        <li className="w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {/* Header Part */}
+                                <div className="flex flex-col gap-2">
+                                    {/* Picture */}
+                                    <div className="w-40 h-24 rounded-lg overflow-hidden">
+                                        <img
+                                            src="/linkImage1.svg"
+                                            alt="city to visit"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+
+                                    {/* Name */}
+                                    <h6 className="font-medium">
+                                        Country
+                                    </h6>
+                                </div>
+
+                                {/* Links */}
+                                <ul className="flex flex-col gap-1 text-foreground/80 text-sm">
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Czech Republic
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Israel
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        China
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Japan
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Ukraine
+                                    </Link>
+
+                                    <Link
+                                        to='/'
+                                        className='w-fit hover:bg-foreground/5 hover:text-foreground duration-200 py-1.5 px-2.5  rounded'
+                                    >
+                                        Myanmar
+                                    </Link>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </HoverCardContent>
             </HoverCard>
 
