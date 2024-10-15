@@ -61,3 +61,17 @@ export interface ICardExploreNearby {
 export interface IGridContentBox {
     TableToMap: ICardExploreNearby[];
 }
+
+export interface INotifications {
+    id: number;
+    url: string;
+    name: string;
+    profile: string;
+    message: string;
+    time: number;
+}
+
+export interface ITruncateText {
+    text: string,
+    wordLimit?: number
+}
