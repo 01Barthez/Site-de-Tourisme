@@ -16,7 +16,7 @@ const UserAvatar: React.FC = () => {
         <>
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <Avatar className="rounded-full w-auto h-auto p-1 hover:bg-foreground/5 duration-300">
+                    <Avatar className="rounded-full w-auto h-auto p-2 hover:bg-foreground/5 duration-300">
                         <AvatarImage
                             src="/src/assets/userProfile.svg"
                             alt='profile Barthez'
