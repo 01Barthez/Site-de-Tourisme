@@ -2,7 +2,9 @@ import React from 'react'
 
 const GoodNews: React.FC = () => {
   return (
-    <div>GoodNews</div>
+    <section>GoodNews
+      
+    </section>
   )
 }
 

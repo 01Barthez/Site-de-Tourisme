@@ -20,7 +20,6 @@ const NotificationBtn: React.FC = () => {
                     variant='outline'
                     size="icon"
                     className="relative w-auto h-auto p-3 text-xl border-none bg-transparent shadow-none rounded-full hover:bg-foreground/5 duration-200"
-                    onClick={() => alert('hello')}
                 >
                     <div className="relative">
                         {/* Icon Bell */}
@@ -37,7 +36,7 @@ const NotificationBtn: React.FC = () => {
                     Notifications
                 </DropdownMenuLabel>
 
-                <ScrollArea className="max-h-64 w-fit">
+                <ScrollArea className="h-64 w-fit">
                     {
                         NotificationUsers.map((notif) => (
                             <DropdownMenuItem className='mb-2 rounded-lg'>

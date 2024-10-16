@@ -4,7 +4,7 @@ export const ExploreNearlyZone: ICardExploreNearby[] = [
     {
         url: '/listing-stay-map',
         image: '/src/assets/discover1.svg',
-        name: 'New Yourk',
+        name: 'New York',
         delay: 19,
         visit: 8288,
     },
@@ -52,7 +52,7 @@ export const ExploreNearlyZone: ICardExploreNearby[] = [
     {
         url: '/listing-stay-map',
         image: '/src/assets/discover1.svg',
-        name: 'New Yourk',
+        name: 'New York',
         delay: 19,
         visit: 1288,
     },
@@ -64,5 +64,4 @@ export const ExploreNearlyZone: ICardExploreNearby[] = [
         delay: 19,
         visit: 8288,
     },
-
 ]

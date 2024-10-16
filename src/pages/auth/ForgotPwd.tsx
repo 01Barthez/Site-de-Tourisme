@@ -15,24 +15,19 @@ import { Input } from "../../components/ui/input"
 import { Link } from "react-router-dom"
 import { toast } from "../../hooks/use-toast"
 import { useNavigate } from "react-router-dom";
-
-const formSchema = z.object({
-  email: z.string().email({
-    message: "Should be a correct email !"
-  })
-})
+import { formSchemaEmail } from "../../global/constant/Constant"
 
 const ForgotPwd: React.FC = () => {
   const navigate = useNavigate();
 
   const [isFocused, setIsFocused] = useState(false);
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof formSchemaEmail>>({
+    resolver: zodResolver(formSchemaEmail),
   })
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit(values: z.infer<typeof formSchemaEmail>) {
     toast({
       title: "Souscription Réussite !",
       description: <>
@@ -96,7 +91,7 @@ const ForgotPwd: React.FC = () => {
                         }}
                       />
                     </FormControl>
-                    <FormMessage className="absolute" />
+                    <FormMessage className="absolute animate-incommingErrorMSG" />
                   </FormItem>
                 )}
               />

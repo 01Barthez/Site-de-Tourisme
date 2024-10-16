@@ -17,7 +17,7 @@ export const NotificationUsers: INotifications[] = [
         profile: 'src/assets/userProfile.svg',
         name: 'Eden Tuan',
         message: 'Measure actions your users take take',
-        time: 5
+        time: 4
     },
 
     {
@@ -26,6 +26,6 @@ export const NotificationUsers: INotifications[] = [
         profile: 'src/assets/userProfile.svg',
         name: 'Eden Tuan',
         message: 'Measure actions your users take take',
-        time: 3
+        time: 4
     },
 ]

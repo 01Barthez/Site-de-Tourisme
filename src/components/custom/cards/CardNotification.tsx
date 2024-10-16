@@ -15,6 +15,22 @@ const CardNotification: React.FC<INotifications> = (props) => {
         return <p className="text-foreground/70">{truncatedText}</p>;
     };
 
+    const ConvertTime: React.FC<number> = (time): string => {
+        let messageTime = "now";
+        if (time > (3600 * 24)) {
+            const days = Math.floor(time / (3600 * 24))
+            messageTime = `${days} day(s)ago`;
+        } else if (time > 3600) {
+            const heure = Math.floor(time / 3600)
+            const minutes = Math.floor(time % 3600)
+            messageTime = `${heure} hour(s) ${minutes > 0 ? `${minutes} minute(s)` : ''} ago`;
+        } else {
+            const minutes = Math.floor(time % 60)
+            messageTime = `${minutes} minutes ago`
+        }
+
+        return messageTime
+    }
 
     return (
         <Link
@@ -24,7 +40,7 @@ const CardNotification: React.FC<INotifications> = (props) => {
             <div className="w-14 h-14 rounded-full overflow-hidden">
                 <img
                     src={props.profile}
-                    alt={`profile ${props.name}`}
+                    alt={`profile of ${props.name}`}
                     className="w-full h-full object-cover"
                 />
             </div>
@@ -41,6 +57,7 @@ const CardNotification: React.FC<INotifications> = (props) => {
 
                 {/* delay */}
                 <span className="text-foreground/40 text-xs">
+                    {/* {ConvertTime(props.time)} */}
                     {props.time} minutes ago
                 </span>
             </div>
