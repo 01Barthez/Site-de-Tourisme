@@ -1,5 +1,6 @@
 import React from 'react'
-import GridContentBox from '../GridContentBox'
+import { TopAuthorsMock } from '../../../global/mocks/TopAuthors'
+import GridAuthorBox from '../GridAuthorBox'
 
 const TopAuthor: React.FC = () => {
   return (
@@ -8,18 +9,18 @@ const TopAuthor: React.FC = () => {
         <div className="flexContent">
           {/* Title header */}
           <h2 className="title text-center">
-            Suggestions for discovery
+          Top 10 author of the month
           </h2>
 
           {/* Paragraph header */}
           <p className="para text-center">
-            Popular places to stay that Chisfis recommends for you
+          Rating based on customer reviews
           </p>
         </div>
 
         {/* Slider Content */}
-      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4 place-items-center">
-        <GridContentBox TableToMap={[]} />
+      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 md:gap-3 lg:gap-4 place-items-center">
+       <GridAuthorBox TableToMap = {TopAuthorsMock} />
       </div>
       </div>
     </section>

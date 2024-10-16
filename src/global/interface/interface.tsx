@@ -74,3 +74,14 @@ export interface ITruncateText {
     text: string,
     wordLimit?: number
 }
+
+export interface IAuthor {
+    id:number;
+    url: string;
+    image: string;
+    name: string;
+    country: string;
+}
+export interface IGridAuthorBox {
+    TableToMap: IAuthor[];
+}
