@@ -43,24 +43,6 @@ To use this template, follow the instructions below.
 
 The project should now be running on **http://localhost:3000**.
 
-## Project Structure
-
-```
-├── public          # Static assets
-├── src
-│   ├── assets      # Images, fonts, and other assets
-│   ├── components  # Reusable React components
-│   ├── pages       # Application pages
-│   ├── styles      # Tailwind CSS configurations
-│   ├── App.tsx     # Main application component
-│   └── index.tsx   # Entry point for the React application
-├── tailwind.config.js  # Tailwind CSS configuration file
-├── postcss.config.js   # PostCSS configuration file
-├── vite.config.ts      # Vite configuration file
-└── package.json        # Project metadata and dependencies
-
-```
-
 ## Contributing
 
 Contributions are always welcome!
