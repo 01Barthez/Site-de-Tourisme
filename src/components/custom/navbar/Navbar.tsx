@@ -13,12 +13,12 @@ const Navbar: React.FC = () => {
     return (
         <header className='container sticky z-50 top-0 left-0 w-screen backdrop-blur-md bg-background/85 border-b border-foreground/20'>
             {/* NavBar for small screens */}
-            <nav className="md:hidden">
+            <nav className="lg:hidden">
                 <SmallUpNavbar />
             </nav>
 
             {/* NavBar for large screens */}
-            <nav className="hidden md:block py-3 px-4">
+            <nav className="hidden lg:block py-3 px-4">
                 {
                     selectedNav === "nav1" ? (<Navbar1 />) : (selectedNav === "nav2" ? (<Navbar2 />) : (<Navbar3 />))
                 }

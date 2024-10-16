@@ -25,7 +25,7 @@ const Navbar2: React.FC = () => {
 
 
       {/* Right Part */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2.5">
         {/* Toggle Buton Templates */}
         <Templates />
 
@@ -35,11 +35,13 @@ const Navbar2: React.FC = () => {
         {/* Toggle Buton ListPropertys */}
         <ListProperty />
 
-        {/* Notification button */}
-        <NotificationBtn />
+        <div className="flex items-center gap-1">
+          {/* Notification button */}
+          <NotificationBtn />
 
-        {/* USER ACCOUNT */}
-        <UserAvatar />
+          {/* USER ACCOUNT */}
+          <UserAvatar />
+        </div>
       </div>
     </div>
   )

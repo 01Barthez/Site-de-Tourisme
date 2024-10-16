@@ -664,7 +664,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/3'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 3
@@ -673,7 +673,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/4'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 4
@@ -682,7 +682,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/5'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 5
@@ -691,7 +691,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/6'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 6
@@ -700,7 +700,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/7'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 7
@@ -709,7 +709,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/8'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 8
@@ -718,7 +718,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/9'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 9
@@ -727,7 +727,7 @@ const NavLinks1: React.FC = () => {
 
                                         <li className="w-full">
                                             <Link
-                                                to={'/add-listing/2'}
+                                                to={'/add-listing/10'}
                                                 className="w-full inline-block hover:bg-foreground/10 text-foreground/80 hover:text-foreground p-2 px-4 text-sm rounded-md"
                                             >
                                                 Add listing 10
