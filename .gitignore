@@ -14,6 +14,7 @@ dist-ssr
 
 # Editor directories and files
 .fetch-client/
+.fetch-client/*
 .vscode/*
 !.vscode/extensions.json
 .idea
