@@ -1,20 +1,40 @@
 import React from 'react'
 import Logo from '../Logo'
+import ListProperty from './subcompoments/ListProperty'
+import NotificationBtn from './subcompoments/NotificationBtn'
+import UserAvatar from './subcompoments/UserAvatar'
+import CenterMenu from './subcompoments/CenterMenu'
+import MenuBtn from './subcompoments/MenuBtn'
 
 const Navbar3: React.FC = () => {
   return (
-      <div className=" flex justify-between items-center">
-        {/* Left-side */}
-        <div className="flex items-center gap-8">
-          {/* Logo Parth */}
-          <Logo />
-        </div>
-
-        {/* Right parth */}
-        <div className="">
-
-        </div>
+    <div className=" flex justify-between items-center">
+      {/* Left-side */}
+      <div className="flex items-center gap-8">
+        {/* Logo Parth */}
+        <Logo />
       </div>
+
+      {/* Center part */}
+      <div className="">
+        <CenterMenu />
+      </div>
+
+      {/* Right parth */}
+      <div className="flex items-center gap-1">
+        {/* Toggle Buton ListPropertys */}
+        <ListProperty />
+
+        {/* Notification button */}
+        <NotificationBtn />
+
+        {/* USER ACCOUNT */}
+        <UserAvatar />
+
+        {/* Menu Btn */}
+        <MenuBtn />
+      </div>
+    </div>
   )
 }
 
