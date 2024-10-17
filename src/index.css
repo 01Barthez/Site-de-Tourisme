@@ -68,7 +68,7 @@
     @apply bg-background text-foreground duration-200;
   }
   .linkhover{
-    @apply hover:text-foreground inline-block hover:translate-x-2 duration-300;
+    @apply hover:text-foreground hover:translate-x-1.5 duration-300;
   }
   .togglebtn {
     @apply hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-sm font-medium;

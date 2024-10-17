@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                 <Link
                   key={link.id}
                   to={link.url}
-                  className='text-foreground2 text-base md:text-xl flex items-center gap-1 capitalize text-nowrap linkhover'
+                  className='text-foreground/80 text-sm flex items-center gap-1 capitalize text-nowrap linkhover'
                 >
                   <span className='text-lg'>
                     {link.icon}
