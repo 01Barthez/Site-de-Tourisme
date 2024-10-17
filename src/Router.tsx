@@ -1,5 +1,4 @@
 import { createBrowserRouter, Outlet } from "react-router-dom"
-import { createPortal } from 'react-dom';
 import PageError from "./pages/errors/PageError";
 import Home1 from "./pages/home/Home1";
 import Home2 from "./pages/home/Home2";
@@ -18,13 +17,9 @@ const Router = createBrowserRouter([
         path: "/",
         element: <>
             <Outlet />
-            {
-                // Portail pour le settings
-                createPortal(
-                    <ParamsBtn />,
-                    document.body
-                )
-            }
+
+            // Portail pour le settings
+            <ParamsBtn />,
         </>,
 
         // Page erreur

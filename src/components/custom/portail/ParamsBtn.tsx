@@ -17,6 +17,7 @@ import { ToggleGroup, ToggleGroupItem } from "../../ui/toggle-group";
 import { useSetNavbar } from "../../../hooks/useSetNavbar";
 import { useNavigate } from "react-router-dom";
 import { Value, ValueHome } from "../../../global/interface/interface";
+import { createPortal } from 'react-dom';
 
 const ParamsBtn: React.FC = () => {
     const deviceWidth = useDeviceWidth();
@@ -26,8 +27,8 @@ const ParamsBtn: React.FC = () => {
     const { selected1, selected2, selected3 } = useSetNavbar();
     const navigate = useNavigate();
 
-    return (
-        <div className='hidden lg:block absolute top-40 right-5'>
+    return createPortal(
+        <div className='hidden lg:block fixed z-50 top-40 right-5'>
             <DropdownMenu>
                 <DropdownMenuTrigger>
                     <Button
@@ -182,7 +183,9 @@ const ParamsBtn: React.FC = () => {
                     </div>
                 </DropdownMenuContent>
             </DropdownMenu>
-        </div>
+        </div>,
+
+        document.body
     )
 }
 
