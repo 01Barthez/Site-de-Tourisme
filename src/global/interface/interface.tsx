@@ -1,4 +1,5 @@
 export type Value = 'header1' | 'header2' | 'header3'
+export type ValueHome = 'home1' | 'home2' | 'home3'
 
 export interface ISocialLink {
     id: number,

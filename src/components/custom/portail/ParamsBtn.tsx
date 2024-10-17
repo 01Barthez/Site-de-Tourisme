@@ -4,6 +4,7 @@ import { FiSettings } from "react-icons/fi";
 import {
     DropdownMenu,
     DropdownMenuContent,
+    DropdownMenuGroup,
     DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuSeparator,
@@ -39,7 +40,7 @@ const ParamsBtn: React.FC = () => {
 
                 <DropdownMenuContent
                     style={{ width: `${dropdownWidth}px` }}
-                    className='p-0 mt-2 mr-5 rounded-2xl shadow-custom'
+                    className='p-0 mt-2 mr-5 rounded-2xl shadow dark:shadow-foreground/20'
                 >
                     <div className="p-4">
 
@@ -49,11 +50,11 @@ const ParamsBtn: React.FC = () => {
 
                         <DropdownMenuSeparator className='bg-gray-200' />
 
-                        <div className="py-2 flex flex-col gap-1">
+                        <DropdownMenuGroup className="py-2 flex flex-col gap-1">
                             {/* HEADER MANAGEMENT */}
                             <DropdownMenuItem
                                 onSelect={(e) => e.preventDefault()}
-                                className=" py-2 focus:bg-card focus:text-card-foreground flex flex-col gap-2 items-start"
+                                className=" py-2 focus:bg-card focus:text-card-foreground hover:bg-transparent dark:hover:bg-transparent flex flex-col gap-2 items-start"
                             >
                                 <h4 className="text-sm font-medium">
                                     Header Styles
@@ -64,33 +65,41 @@ const ParamsBtn: React.FC = () => {
                                     value={selectedValue} onValueChange={(value: Value) => setSelectedValue(value)}
                                 >
                                     <ToggleGroupItem
-                                        className="p-0 hover:bg-transparent"
+                                        className="p-0 hover:bg-transparent rounded-full h-auto"
                                         value="header1"
                                         aria-label="Toggle header1"
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header1' ? 'bg-black/90 text-white hover:bg-black/85 hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header1' && 'shadow bg-foreground/90 text-background hover:bg-foreground/85 hover:text-background'}`}
                                             onClick={selected1}
                                         >
                                             Header 1
                                         </Button>
                                     </ToggleGroupItem>
 
-                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="header2" aria-label="Toggle header2">
+                                    <ToggleGroupItem
+                                        className="p-0 hover:bg-transparent rounded-full h-auto"
+                                        value="header2"
+                                        aria-label="Toggle header2"
+                                    >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header2' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header2' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={selected2}
                                         >
                                             Header 2
                                         </Button>
                                     </ToggleGroupItem>
 
-                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="header3" aria-label="Toggle header3">
+                                    <ToggleGroupItem
+                                        className="p-0 hover:bg-transparent rounded-full h-auto"
+                                        value="header3"
+                                        aria-label="Toggle header3"
+                                    >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header3' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header3' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={selected3}
                                         >
                                             Header 3
@@ -102,7 +111,7 @@ const ParamsBtn: React.FC = () => {
                             {/* HOME MANAGEMENT */}
                             <DropdownMenuItem
                                 onSelect={(e) => e.preventDefault()}
-                                className=" py-2 focus:bg-card focus:text-card-foreground flex flex-col gap-2 items-start"
+                                className=" py-2 focus:bg-card focus:text-card-foreground hover:bg-transparent dark:hover:bg-transparent flex flex-col gap-2 items-start"
                             >
                                 <h4 className="text-sm font-medium">
                                     Home Demos
@@ -113,33 +122,41 @@ const ParamsBtn: React.FC = () => {
                                     value={selectedHome} onValueChange={(value: ValueHome) => setSelectedHome(value)}
                                 >
                                     <ToggleGroupItem
-                                        className="p-0 hover:bg-transparent"
+                                        className="p-0 hover:bg-transparent rounded-full h-auto"
                                         value="home1"
                                         aria-label="Toggle home1"
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home1' ? 'bg-black/90 text-white hover:bg-black/85 hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home1' && 'shadow bg-foreground/90 text-background hover:bg-foreground/85 hover:text-background'} `}
                                             onClick={() => navigate("/")}
                                         >
                                             Home Main
                                         </Button>
                                     </ToggleGroupItem>
 
-                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="home2" aria-label="Toggle home2">
+                                    <ToggleGroupItem
+                                        className="p-0 hover:bg-transparent rounded-full h-auto"
+                                        value="home2"
+                                        aria-label="Toggle home2"
+                                    >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home2' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home2' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={() => navigate("/home-2")}
                                         >
                                             Real Estate
                                         </Button>
                                     </ToggleGroupItem>
 
-                                    <ToggleGroupItem className="p-0 hover:bg-transparent" value="home3" aria-label="Toggle home3">
+                                    <ToggleGroupItem
+                                        className="p-0 hover:bg-transparent rounded-full h-auto"
+                                        value="home3"
+                                        aria-label="Toggle home3"
+                                    >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home3' ? 'bg-black text-white hover:bg-black hover:text-white' : ''} `}
+                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home3' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={() => navigate("/home-3")}
                                         >
                                             Home 3
@@ -147,7 +164,7 @@ const ParamsBtn: React.FC = () => {
                                     </ToggleGroupItem>
                                 </ToggleGroup>
                             </DropdownMenuItem>
-                        </div>
+                        </DropdownMenuGroup>
                     </div>
 
                     <div className="py-4 bg-primary/5">
