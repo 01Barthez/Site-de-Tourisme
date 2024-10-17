@@ -14,13 +14,15 @@ const CardSuggestionDiscorvery: React.FC<ICardSuggestionDiscorvery> = (props) =>
                     />
                 </div>
 
-                <div className='text-lg text-foreground font-medium'>
-                    {props.name}
-                </div>
+                <div className="flex flex-col gap-1">
+                    <div className='text-lg text-foreground font-medium'>
+                        {props.name}
+                    </div>
 
-                <div className='text-foreground/70'>
-                    <span>{props.properties_number}</span>
-                    <span> properties</span>
+                    <div className='text-foreground/70'>
+                        <span>{props.properties_number}</span>
+                        <span> properties</span>
+                    </div>
                 </div>
             </div>
         </Link>
