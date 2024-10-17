@@ -9,7 +9,7 @@ const HotelExperience: React.FC = () => {
     <section className='container py-16'>
       <div className="flex items-center gap-10 flex-col lg:flex-row">
         {/* Detail content part */}
-        <div data-aos="" className="max-w-full lg:max-w-[50%]  w-full space-y-10 md:space-y-14">
+        <div data-aos="" className="max-w-full lg:max-w-[50%]  w-full space-y-6 md:space-y-10">
           {/* Big title */}
           <h1 className="font-medium text-4xl md:text-5xl xl:text-7xl !leading-[115%]">
             Hotel, car & experiences

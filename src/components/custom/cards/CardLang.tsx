@@ -8,7 +8,7 @@ const CardLang: React.FC<ILanguages> = ({ lang, region }) => {
     <ToggleGroupItem
       value={`${lang}-${region}`}
       aria-label="Toggle bold"
-      className='rounded-lg pr-12 py-1 h-auto w-full flex flex-col items-start text-start hover:bg-foreground/5 hover:text-foreground'
+      className='rounded-lg pr-16 py-1 h-auto w-full flex flex-col items-start text-start hover:bg-foreground/5 hover:text-foreground'
     >
       <h4 className="font-medium text-sm">
         {lang}

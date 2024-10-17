@@ -22,8 +22,8 @@ const Router = createBrowserRouter([
             <ParamsBtn />,
         </>,
 
-        // Page erreur
-        errorElement: <>
+// Page erreur
+errorElement: <>
             <PageError />
         </>,
 

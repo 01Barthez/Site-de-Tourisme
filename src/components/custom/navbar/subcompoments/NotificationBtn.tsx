@@ -39,7 +39,7 @@ const NotificationBtn: React.FC = () => {
                 <ScrollArea className="h-64 w-fit">
                     {
                         NotificationUsers.map((notif) => (
-                            <DropdownMenuItem className='mb-2 rounded-lg'>
+                            <DropdownMenuItem className='hover:bg-background/5 mb-2 rounded-lg duration-200'>
                                 <CardNotification
                                     id={notif.id}
                                     url={notif.url}

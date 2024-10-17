@@ -8,7 +8,7 @@ const CardCurrency: React.FC<ITabCurrency> = ({ icon, abbrev }) => {
     <ToggleGroupItem
       value={abbrev}
       aria-label="Toggle bold"
-      className='text-foreground/80 rounded pr-24 py-2 gap-2 h-auto w-full flex items-center text-start hover:bg-foreground/5 hover:text-foreground'
+      className='rounded-lg text-foreground/80 pr-24 py-2 gap-2 h-auto w-full flex items-center text-start hover:bg-foreground/5 hover:text-foreground'
     >
       <span>
         {icon}

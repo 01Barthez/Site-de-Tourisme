@@ -37,7 +37,7 @@ const CardNotification: React.FC<INotifications> = (props) => {
     return (
         <Link
             to={props.url}
-            className='flex items-center gap-4'
+            className='flex items-center gap-4 hover:bg-background/5 duration-200'
         >
             <Avatar className="w-14 h-14 rounded-full overflow-hidden">
                 <AvatarImage

@@ -29,7 +29,7 @@ const LanguageCurrent: React.FC = () => {
       <DropdownMenu>
         {/* Header */}
         <DropdownMenuTrigger className="flex items-center gap-1">
-          <span className='font-medium flex gap-1 items-center text-lg text-foreground/60'>
+          <span className='font-medium flex gap-1 items-center text-lg text-foreground/80'>
             <MdLanguage />
             <span>/</span>
             <GrCurrency />
@@ -41,17 +41,17 @@ const LanguageCurrent: React.FC = () => {
         <DropdownMenuContent className='mt-5 space-y-2 bg-card rounded-3xl'>
           <Tabs defaultValue="language" className="w-fit">
             <DropdownMenuLabel>
-              <TabsList className="rounded-full grid w-fit h-auto grid-cols-2 gap-1">
+              <TabsList className="bg-foreground/5 rounded-full grid w-fit h-auto grid-cols-2 gap-1">
                 <TabsTrigger
                   value="language"
-                  className="rounded-full w-fit px-12 py-2.5 hover:bg-card/70"
+                  className="rounded-full w-fit px-12 py-2.5 hover:text-foreground/80 hover:bg-card/70"
                 >
                   Language
                 </TabsTrigger>
 
                 <TabsTrigger
                   value="currency"
-                  className="rounded-full w-fit px-12 py-2.5 hover:bg-card/70"
+                  className="rounded-full w-fit px-12 py-2.5 hover:text-foreground/80 hover:bg-card/70"
                 >
                   Currency
                 </TabsTrigger>
