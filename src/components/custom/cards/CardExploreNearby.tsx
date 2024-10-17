@@ -5,8 +5,11 @@ import { Link } from 'react-router-dom'
 
 const CardExploreNearby: React.FC<ICardExploreNearby> = (props) => {
     return (
-        <Card className='w-full md:w-fit relative p-6'>
-            <Link to={props.url} className='flex items-center gap-4'>
+        <Card className='w-full md:w-fit rounded-3xl p-2 shadow-none hover:bg-primary/5 hover:shadow-xl duration-200'>
+            <Link to={props.url} className='relative p-4 flex items-center gap-4'>
+                <div className="absolute top-1 right-1  bg-foreground/5 rounded-full py-0.5 min-w-2 text-xs font-medium px-2">
+                    {props.visit}
+                </div>
                 <div className="w-24 h-24 rounded-full overflow-hidden">
                     <img
                         src={props.image}

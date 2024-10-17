@@ -18,7 +18,7 @@ const ExploreNearby: React.FC = () => {
       </div>
 
       {/* Contain section */}
-      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4 place-items-center">
+      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 place-items-center">
         {/* Slider Content */}
         <GridContentBox TableToMap={ExploreNearlyZone} />
       </div>
