@@ -6,7 +6,7 @@ import Logo from '../Logo';
 const WhyChoose: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <section className='container py-16 my-16 bg-foreground/5 rounded-3xl'>
+    <section className='container py-16 my-16 bg-foreground/5 rounded-[2.5rem] '>
       <div className="flex items-center gap-10 flex-col lg:flex-row">
 
         {/* Detail content part */}
