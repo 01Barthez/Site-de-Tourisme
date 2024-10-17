@@ -20,7 +20,9 @@ const Navbar: React.FC = () => {
             {/* NavBar for large screens */}
             <nav className="hidden lg:block py-3 px-4">
                 {
-                    selectedNav === "nav1" ? (<Navbar1 />) : (selectedNav === "nav2" ? (<Navbar2 />) : (<Navbar3 />))
+                    selectedNav === "nav1" ? 
+                    (<Navbar1 />) : (selectedNav === "nav2" ? 
+                        (<Navbar2 />) : (<Navbar3 />))
                 }
             </nav>
         </header>
