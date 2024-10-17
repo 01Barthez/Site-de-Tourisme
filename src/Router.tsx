@@ -18,7 +18,7 @@ const Router = createBrowserRouter([
         element: <>
             <Outlet />
 
-            // Portail pour le settings
+            {/* Portail pour le settings */}
             <ParamsBtn />,
         </>,
 

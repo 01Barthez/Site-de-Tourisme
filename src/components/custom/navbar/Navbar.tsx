@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
             <nav className="hidden lg:block py-3 px-4">
                 {
                     selectedNav === "nav1" ? 
-                    (<Navbar1 />) : (selectedNav === "nav2" ? 
-                        (<Navbar2 />) : (<Navbar3 />))
+                    <Navbar1 /> : (selectedNav === "nav2" ? 
+                        <Navbar2 /> : <Navbar3 />)
                 }
             </nav>
         </header>

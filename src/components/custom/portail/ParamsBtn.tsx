@@ -72,7 +72,7 @@ const ParamsBtn: React.FC = () => {
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header1' && 'shadow bg-foreground/90 text-background hover:bg-foreground/85 hover:text-background'}`}
+                                            className={`h-auto py-1.5 hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header1' && 'shadow bg-foreground/90 text-background hover:bg-foreground/85 hover:text-background'}`}
                                             onClick={selected1}
                                         >
                                             Header 1
@@ -86,7 +86,7 @@ const ParamsBtn: React.FC = () => {
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header2' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
+                                            className={`h-auto py-1.5 hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header2' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={selected2}
                                         >
                                             Header 2
@@ -100,7 +100,7 @@ const ParamsBtn: React.FC = () => {
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header3' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
+                                            className={`h-auto py-1.5 hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedValue === 'header3' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={selected3}
                                         >
                                             Header 3
@@ -129,7 +129,7 @@ const ParamsBtn: React.FC = () => {
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home1' && 'shadow bg-foreground/90 text-background hover:bg-foreground/85 hover:text-background'} `}
+                                            className={`h-auto py-1.5 hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home1' && 'shadow bg-foreground/90 text-background hover:bg-foreground/85 hover:text-background'} `}
                                             onClick={() => navigate("/")}
                                         >
                                             Home Main
@@ -143,7 +143,7 @@ const ParamsBtn: React.FC = () => {
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home2' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
+                                            className={`h-auto py-1.5 hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home2' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={() => navigate("/home-2")}
                                         >
                                             Real Estate
@@ -157,7 +157,7 @@ const ParamsBtn: React.FC = () => {
                                     >
                                         <Button
                                             variant={'outline'}
-                                            className={`h-auto py-[6px] hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home3' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
+                                            className={`h-auto py-1.5 hover:bg-transparent hover:border-foreground/40 transition-all duration-300 rounded-full text-xs font-base ${selectedHome === 'home3' && 'shadow bg-foreground text-background hover:bg-foreground hover:text-background'} `}
                                             onClick={() => navigate("/home-3")}
                                         >
                                             Home 3

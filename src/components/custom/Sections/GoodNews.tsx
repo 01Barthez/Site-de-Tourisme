@@ -2,7 +2,20 @@ import React from 'react'
 
 const GoodNews: React.FC = () => {
   return (
-    <section>GoodNews
+    <section className='container py-16 my-16 md:my-20 bg-foreground/5 rounded-[2.5rem] '>
+      {/* Header part */}
+      <div className="flexContent items-center mx-auto">
+        <h2 className="title text-center">
+          Good news from far away
+        </h2>
+
+        <p className="text-foreground/70 text-center">
+          Let's see what people think of Chisfis
+        </p>
+      </div>
+
+      {/* comments */}
+
       
     </section>
   )
