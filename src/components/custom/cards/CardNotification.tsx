@@ -1,6 +1,7 @@
 import React from 'react'
 import { INotifications, ITruncateText } from '../../../global/interface/interface';
 import { Link } from 'react-router-dom';
+import { Avatar, AvatarFallback, AvatarImage } from '../../ui/avatar';
 
 const CardNotification: React.FC<INotifications> = (props) => {
     const TruncateText: React.FC<ITruncateText> = ({ text, wordLimit = 5 }) => {
@@ -31,19 +32,23 @@ const CardNotification: React.FC<INotifications> = (props) => {
 
         return messageTime
     }
+    console.log(ConvertTime)
 
     return (
         <Link
             to={props.url}
             className='flex items-center gap-4'
         >
-            <div className="w-14 h-14 rounded-full overflow-hidden">
-                <img
+            <Avatar className="w-14 h-14 rounded-full overflow-hidden">
+                <AvatarImage
                     src={props.profile}
                     alt={`profile of ${props.name}`}
                     className="w-full h-full object-cover"
                 />
-            </div>
+                <AvatarFallback className='w-full h-full'>
+                    CN
+                </AvatarFallback>
+            </Avatar>
 
             {/* Notification detail */}
             <div className="flex flex-col gap-1">
