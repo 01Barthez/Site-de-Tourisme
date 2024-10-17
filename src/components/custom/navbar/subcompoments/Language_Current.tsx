@@ -38,7 +38,7 @@ const LanguageCurrent: React.FC = () => {
         </DropdownMenuTrigger>
 
         {/* Content */}
-        <DropdownMenuContent className=' rounded-2xl mt-5 space-y-2 bg-card'>
+        <DropdownMenuContent className='mt-5 space-y-2 bg-card rounded-3xl'>
           <Tabs defaultValue="language" className="w-fit">
             <DropdownMenuLabel>
               <TabsList className="rounded-full grid w-fit h-auto grid-cols-2 gap-1">

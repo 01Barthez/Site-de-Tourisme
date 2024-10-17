@@ -16,7 +16,7 @@ const Travelers: React.FC = () => {
                 <HiOutlineChevronDown className="duration-200 text-foreground/50" />
             </DropdownMenuTrigger>
 
-            <DropdownMenuContent className='p-0 mt-5 space-y-2 rounded-2xl bg-card min-w-80'>
+            <DropdownMenuContent className='p-0 mt-5 space-y-2 rounded-3xl bg-card min-w-80'>
                 {/* Bloc top */}
                 <div className="space-y-1 p-2.5">
                     {/* Firstelement */}
