@@ -18,6 +18,7 @@ import {
 import { cn } from '../../../../lib/utils'
 import { Link } from "react-router-dom";
 import { useTheme } from "../../../../hooks/useTheme";
+import { Switch } from "../../../ui/switch";
 
 const UserAvatar: React.FC = () => {
     // gerer la deconexion
@@ -28,7 +29,8 @@ const UserAvatar: React.FC = () => {
     const { setTheme } = useTheme()
     const [isChecked, setIsChecked] = useState<boolean>(true)
 
-    const changeTheme = () => {
+    const changeTheme = (e) => {
+        e.preventDefault();
         setTheme(isChecked ? "dark" : "light");
         setIsChecked((prev) => !prev);
     };
@@ -126,7 +128,7 @@ const UserAvatar: React.FC = () => {
                                 </div>
 
                                 {/* toggle mode button  */}
-                                {/* <Switch onClick={changeTheme} /> */}
+                                <Switch onClick={changeTheme} />
                             </div>
                         </DropdownMenuItem>
 
