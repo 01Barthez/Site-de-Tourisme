@@ -1,23 +1,12 @@
 import { MdLanguage } from "react-icons/md";
 import { GrCurrency } from "react-icons/gr";
-import React from 'react'
+import React, { useId } from 'react'
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger
 } from '../../../ui/tabs'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle
-} from '../../../ui/card'
-import { Label } from '../../../ui/label'
-import { Input } from '../../../ui/input'
-import { Button } from '../../../ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,14 +15,21 @@ import {
   DropdownMenuTrigger
 } from '../../../ui/dropdown-menu'
 import { HiOutlineChevronDown } from 'react-icons/hi'
-
+import { TabLangs } from "../../../../global/mocks/MockLanguages";
+import CardLang from "../../cards/CardLang";
+import { ToggleGroup } from "../../../ui/toggle-group";
+import CardCurrency from "../../cards/CardCurrency";
+import { TabCurrency } from "../../../../global/mocks/MockCurrency";
 
 const LanguageCurrent: React.FC = () => {
+  const id = useId();
+  const id2 = useId();
   return (
     <>
       <DropdownMenu>
+        {/* Header */}
         <DropdownMenuTrigger className="flex items-center gap-1">
-          <span className='font-medium flex gap-1 items-center'>
+          <span className='font-medium flex gap-1 items-center text-lg text-foreground/60'>
             <MdLanguage />
             <span>/</span>
             <GrCurrency />
@@ -41,65 +37,52 @@ const LanguageCurrent: React.FC = () => {
           <HiOutlineChevronDown className="duration-200 text-foreground/50" />
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent className=' mt-5 space-y-2 bg-card'>
-          <Tabs defaultValue="language" className="w-[400px]">
+        {/* Content */}
+        <DropdownMenuContent className=' rounded-2xl mt-5 space-y-2 bg-card'>
+          <Tabs defaultValue="language" className="w-fit">
             <DropdownMenuLabel>
-              <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="language">
+              <TabsList className="rounded-full grid w-fit h-auto grid-cols-2 gap-1">
+                <TabsTrigger
+                  value="language"
+                  className="rounded-full w-fit px-12 py-2.5 hover:bg-card/70"
+                >
                   Language
                 </TabsTrigger>
-                <TabsTrigger value="device">
-                  Device
+
+                <TabsTrigger
+                  value="currency"
+                  className="rounded-full w-fit px-12 py-2.5 hover:bg-card/70"
+                >
+                  Currency
                 </TabsTrigger>
               </TabsList>
             </DropdownMenuLabel>
 
             <DropdownMenuItem className='focus:bg-transparent'>
               <TabsContent value="language">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>language</CardTitle>
-                    <CardDescription>
-                      Make changes to your language here. Click save when you're done.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-2">
-                    <div className="space-y-1">
-                      <Label htmlFor="name">Name</Label>
-                      <Input id="name" defaultValue="Pedro Duarte" />
-                    </div>
-                    <div className="space-y-1">
-                      <Label htmlFor="username">Username</Label>
-                      <Input id="username" defaultValue="@peduarte" />
-                    </div>
-                  </CardContent>
-                  <CardFooter>
-                    <Button>Save changes</Button>
-                  </CardFooter>
-                </Card>
+                <ToggleGroup
+                  type="single"
+                  className=" w-full h-auto grid grid-cols-2 gap-y-1 gap-x-2 "
+                >
+                  {
+                    TabLangs.map(el => (
+                      <CardLang key={id} lang={el.lang} region={el.region} />
+                    ))
+                  }
+                </ToggleGroup>
               </TabsContent>
-              <TabsContent value="device">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>device</CardTitle>
-                    <CardDescription>
-                      Change your device here. After saving, you'll be logged out.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-2">
-                    <div className="space-y-1">
-                      <Label htmlFor="current">Current device</Label>
-                      <Input id="current" type="device" />
-                    </div>
-                    <div className="space-y-1">
-                      <Label htmlFor="new">New device</Label>
-                      <Input id="new" type="device" />
-                    </div>
-                  </CardContent>
-                  <CardFooter>
-                    <Button>Save device</Button>
-                  </CardFooter>
-                </Card>
+
+              <TabsContent value="currency">
+                <ToggleGroup
+                  type="single"
+                  className=" w-full h-auto grid grid-cols-2 gap-y-1 gap-x-2 "
+                >
+                  {
+                    TabCurrency.map(el => (
+                      <CardCurrency key={id2} icon={el.icon} abbrev={el.abbrev} />
+                    ))
+                  }
+                </ToggleGroup>
               </TabsContent>
             </DropdownMenuItem>
           </Tabs >

@@ -23,9 +23,8 @@ const Navbar2: React.FC = () => {
         <Travelers />
       </div>
 
-
       {/* Right Part */}
-      <div className="flex items-center gap-2.5">
+      <div className="flex items-center gap-6">
         {/* Toggle Buton Templates */}
         <Templates />
 

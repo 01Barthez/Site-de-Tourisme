@@ -1,7 +1,5 @@
 import { z } from "zod"
 
-
-
 export const REGEX_Password: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
 
 export const formSchema = z.object({

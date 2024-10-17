@@ -85,3 +85,13 @@ export interface IAuthor {
 export interface IGridAuthorBox {
     TableToMap: IAuthor[];
 }
+
+export interface ILanguages {
+    lang: string;
+    region: string;
+}
+
+export interface ITabCurrency {
+    icon: JSX.Element;
+    abbrev: string;
+}

@@ -1,6 +1,5 @@
 import { INotifications } from "../interface/interface";
 
-
 export const NotificationUsers: INotifications[] = [
     {
         id: 1,
@@ -29,3 +28,4 @@ export const NotificationUsers: INotifications[] = [
         time: 4
     },
 ]
+

@@ -11,7 +11,7 @@ const ListProperty: React.FC = () => {
         variant={'outline'}
         className='rounded-full shadow-none hover:bg-transparent hover:border-foreground duration-300'
       >
-        List property
+        List propertyns
       </Button>
     </Link>
   )
