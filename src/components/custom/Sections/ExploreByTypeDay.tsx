@@ -1,23 +1,27 @@
 import React from 'react'
-import { placeDiscorvery } from '../../../global/mocks/suggestionsDiscorvery'
-import SwipperCarousel from '../SwipperCarousel'
+import SwipperCarouselExploreHouse from '../SwipperCarouselExploreHouse'
+import { HouseDiscorvery } from '../../../global/mocks/suggestionsExploreHouses'
 
 const ExploreByTypeDay: React.FC = () => {
   return (
-    <section className='container flexContent py-10'>
+    <section className='container py-10 md:py-16 space-y-10'>
       {/* Title header */}
-      <h2 className="title text-center">
-        Explore by types of stays
-      </h2>
+      <div className="flexContent">
+        {/* Title header */}
+        <h2 className="title">
+          Explore by types of stays
+        </h2>
 
-      {/* Paragraph header */}
-      <p className="para text-center">
-        Explore houses based on 10 types of stays
-      </p>
+        {/* Paragraph header */}
+        <p className="para">
+          Explore houses based on 10 types of stays
+        </p>
+      </div>
 
       {/* Slider Content */}
-      <SwipperCarousel content={placeDiscorvery} />
+      <SwipperCarouselExploreHouse content={HouseDiscorvery} />
     </section>
+
   )
 }
 

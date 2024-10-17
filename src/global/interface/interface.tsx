@@ -26,6 +26,14 @@ export interface IPlaceDiscorvery {
     properties_number: number;
 }
 
+export interface IHouseDiscorvery {
+    id: number;
+    url: string; //To indicate where we will be redirect after click on image box
+    image: string; // For image links
+    name: string;
+    properties_number: number;
+}
+
 export interface ICardSuggestionDiscorvery {
     url: string; 
     image: string;
@@ -96,3 +104,8 @@ export interface ITabCurrency {
     icon: JSX.Element;
     abbrev: string;
 }
+
+export interface ISwipperCarousel {
+    content: IHouseDiscorvery[]; // L'objet doit avoir une clé `content` avec un tableau
+  }
+  

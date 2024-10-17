@@ -8,8 +8,7 @@ const Footer: React.FC = () => {
   return (
     <footer className='w-screen overflow-hidden py-16 md:py-28 border-t border-t-foreground/20 bg-background text-foreground'>
       <div
-        data-aos="zoom-in"
-        data-aos-duration="600"
+        data-aos=""
         className="container grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10"
       >
         <div className='flex flex-row md:flex-col gap-4 col-span-2 md:col-span-1 justify-between'>

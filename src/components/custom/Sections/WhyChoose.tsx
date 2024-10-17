@@ -10,7 +10,7 @@ const WhyChoose: React.FC = () => {
       <div className="flex items-center gap-10 flex-col lg:flex-row">
 
         {/* Detail content part */}
-        <div data-aos="fade-right" className="max-w-full lg:max-w-[40%]  w-full space-y-10 md:space-y-14">
+        <div data-aos="" className="max-w-full lg:max-w-[40%]  w-full space-y-10 md:space-y-14">
           {/* Logo part */}
           <Logo className="w-16" />
 
@@ -36,7 +36,7 @@ const WhyChoose: React.FC = () => {
         </div>
 
         {/* Image Part */}
-        <div data-aos="fade-left" className="w-full h-full overflow-hidden">
+        <div data-aos="" className="w-full h-full overflow-hidden">
           <img
             src="/newsletter.svg"
             alt="benefits Happening cities"
