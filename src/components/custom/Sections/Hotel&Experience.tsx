@@ -32,40 +32,10 @@ const HotelExperience: React.FC = () => {
 
         {/* Image Part */}
         <div data-aos="" className="w-full h-full overflow-hidden flex gap-4 items-center">
-          {/* First colonne */}
-          {/* <div className="w-[50%] flex flex-col gap-4 ">
-            <div className="w-full] h- ">
-              <img
-                src="/Image.svg"
-                alt="preview tourism zone"
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            <div className="w-[50%]  ">
-              <img
-                src="/newsletter.svg"
-                alt="benefits Happening cities"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div> */}
-
-          {/* second colonne */}
-          {/* <div className="w-[50%]  ">
-            <img
-              src="/newsletter.svg"
-              alt="benefits Happening cities"
-              className="w-full h-full object-contain"
-            />
-          </div> */}
-
-          {/* copy all the image bloc */}
-
           <img
-                src="/Image.svg"
-                alt="hero img"
-            className="w-full h-full"
+            src="/hero-right-removebg-preview.png"
+            alt="hero img"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>
