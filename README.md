@@ -1,90 +1,118 @@
 
-# React + Tailwind CSS + shadcn Starter Template
+# Chisfis Clone - React Application
 
-This is a React project template designed to get you up and running quickly with the latest versions of **React**, **Tailwind CSS**, and **shadcn**. The template is designed to be simple, open-source, and ready for rapid development.
+This project is a clone of the [*Chisfis Nextjs website*](https://chisfis-nextjs.vercel.app/), built using modern technologies such as React, TypeScript, Zustand, shadcn, Zod, and React-Router. The goal of this project is to strengthen our skills in front-end development by recreating a full-featured, interactive website with a focus on best practices and modern tools.
+
+## Screenshots
+
+**Shrot preview of the hero of the website**
+![preview img](public/preview.png)
+
+## Table of Contents
+
+- [Chisfis Clone - React Application](#chisfis-clone---react-application)
+  - [Screenshots](#screenshots)
+  - [Table of Contents](#table-of-contents)
+  - [Projet overview](#projet-overview)
+  - [Tech Stack](#tech-stack)
+  - [Installation and Setup](#installation-and-setup)
+  - [Features](#features)
+  - [Folder Structure](#folder-structure)
+  - [Contributors](#contributors)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Tanks](#tanks)
+
+## Projet overview
+
+The **Chisfis Clone** project aims to replicate the functionality, design, and interactivity of the original Chisfis website. This includes building multiple pages, forms, user authentication, state management, and more. The objective is to practice and apply the skills acquired during our training at [worketyamo](https://worketyamo.com/) in React and consolidate our understanding of various front-end technologies.
+
+Key aspects of this project:
+
+- Interactive and dynamic UI built using React.
+- Form validation and schema creation using Zod.
+- Efficient state management using Zustand.
+- Routing and navigation using React-Router.
+- Styling and components with shadcn.
+- Uses differents React hook such as useState, useEffect, useMemo, useContext, useCallback, customooks...
+
+## Tech Stack
+
+The following technologies are used in this project:
+
+- React: JavaScript library for building user interfaces.
+- TypeScript: Typed superset of JavaScript that adds static types to the code.
+- Zustand: Small, fast, and scalable state management solution.
+- Zod: TypeScript-first schema validation library.
+- React Router: Library for handling in-app navigation.
+- shadcn: Modern design system and component library.
+- Vite: Front-end build tool for fast development.
+- Tailwind-CSS: Utility-first CSS framework for custom designs.
+- pnpm and Yarn: for nodejs package management
+
+## Installation and Setup
+
+Follow the steps below to set up the project on your local machine:
+
+1- Clone the repository:
+
+```bash
+git clone https://github.com/Worketyamo-Students/ChrisfisPrrojet-Barthez_-_Melvis
+cd ChrisfisPrrojet-Barthez_-_Melvis
+```
+
+2- Install the dependencies:
+
+```bash
+pnpm install
+```
+
+3- Run the development server:
+
+```bash
+pnpm run dev
+```
+
+4- Open the application in your browser:
+
+Navigate to <http://localhost:3000> to see the site in action.
 
 ## Features
 
-- **[React](https://fr.react.dev/)**: A modern JavaScript library for building user interfaces.
-- **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for rapid UI development.
-- **[shadcn](https://ui.shadcn.com/)**: Pre-configured components that work with Tailwind CSS and bring ready-made UI elements to your projects.
-- **[Vite](https://vitejs.dev/)**: Super fast build tool for modern front-end projects.
-- **[Pnpm](https://pnpm.io/fr/)**: who is a modern package manager
+- **Theming and Customization**: Dynamic theming support using sadcn to enable light and dark mode; Ability to toggle between themes, enhancing user experience.
+- **Home Page**: Responsive landing page with various sections.
+- **Dynamic Routing with React Router**: Multiple pages with dynamic navigation using React Router; Support for client-side routing, allowing smooth page transitions without reloading; Handling of 404 pages for non-existent routes.
+- **State Management**: Efficient and scalable state management using Zustand.
+- **Form Handling and Validation with Zod**: User input validation with Zod for robust form handling.
+- **Responsive Layout**: The website is fully responsive, adjusting to different screen sizes (mobile, tablet, desktop); Implemented using Tailwind CSS for quick and efficient styling.
+- **Reusable Components**: Built with a focus on reusability and maintainability.
+- **Clean Code and TypeScript Integration**: Strict type-checking with TypeScript for error prevention.
+- **Authentication**: Implementation of a basic authentication system (Login, Signup).; State management for logged-in users using Zustand.
+- **Error Boundaries**: Error boundaries implemented to handle unexpected runtime errors and display user-friendly fallback UI
+- **Fast Development with Vite** : The project is bootstrapped with Vite for lightning-fast hot module replacement (HMR) during development
+- **SEO Optimized**: Implement SEO best practices such as meta tags, alt attributes on images, and proper page titles for improved search engine visibility.
 
-## Getting Started
+## Folder Structure
 
-To use this template, follow the instructions below.
+## Contributors
 
-## Installation
+- **Barthez Kenwou**: [**01Barthez**](https://github.com/01Barthez)
 
-1 . **Clone the repository**:
-  
-  ```bash
-   git clone git@github.com:01Barthez/ReactJs-Shadcn-Started.git
-  ```
-
-2 . **Navigate to the project directory:**:
-
-```bash
-   cd react-tailwind-shadcn-template
-```
-
-3 . **Install the dependencies: Using Yarn:**:
-
-```bash
-   yarn install
-```
-
-4 . **Start the development server: Using Yarn:**:
-
-```bash
-   yarn dev
-```
-
-The project should now be running on **http://localhost:3000**.
+- **Melvis Selena**: [**melvis8**](https://github.com/melvis8)
 
 ## Contributing
 
 Contributions are always welcome!
 
-This project is open-source and contributions are welcome! Feel free to fork this repository, create a branch, and submit a pull request.
+See `contributing.md` for ways to get started.
 
-How to contributes ?
-
-1- Fork the project.
-
-2- Create a new branch for your feature:
-
-```
-git checkout -b feature/my-feature
-```
-
-3- Commit your changes:
-
-```
-git commit -m "Add new feature"
-
-```
-
-4- Push to your branch:
-
-```
-git push origin feature/my-feature
-
-```
-
-5- Open a pull request.
+Please adhere to this project's `code of conduct`.
 
 ## License
 
-This project is licensed under the MIT License. Feel free to use and modify the code as per the terms of the license.
-[LICENCE MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the
+[MIT License](https://choosealicense.com/licenses/mit/). See the LICENSE file for details.
 
-## Authors
+## Tanks
 
-- [Barthez Kenwou](https://www.github.com/01Barthez)
-Feel free to reach out or open an issue for any questions or improvements.
-
-### Contact
-
-this is my email: [kenwoubarthez@gmail.com](mailto:kenwoubarthez@gmail.com)
+Our thanks to [Worketyamo Team](https://worketyamo.com/) for their works and for their support
