@@ -33,7 +33,7 @@ const Navbar3: React.FC = () => {
         <NotificationBtn />
 
         {/* USER ACCOUNT */}
-        <UserAvatar />
+          <UserAvatar />
 
         {/* Menu Btn */}
         <MenuBtn />

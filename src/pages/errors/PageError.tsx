@@ -5,7 +5,7 @@ const PageError: React.FC = () => {
     return (
         <>
             <SEO
-                title="Forgot-Password | Chisfis Projet"
+                title="Page Not Found | Chisfis Projet"
                 description="Access your account to manage bookings and preferences."
             />
 
