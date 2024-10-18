@@ -94,6 +94,31 @@ Navigate to <http://localhost:3000> to see the site in action.
 
 ## Folder Structure
 
+ChrisfisPrrojet-Barthez_-_Melvis
+├── public/
+│   ├── favicon.ico/ # add_fiveicon_folder...
+│   └──   # add statisques imaes and files
+├── src/
+│   ├── assets/ #for images and others
+│   ├── components/
+│   │   ├── custom/ users custom compoments
+│   │   ├── ui/ # for shadcn compoments
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── About.tsx
+│   │   └── Contact.tsx
+│   ├── hooks/ #for custom ooks
+│   ├── store/ # for  zustand store
+│   ├── global/
+│   │   └── constants/
+│   ├── App.tsx
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── tailwind.config.js
+├── vite.config.ts
+└── README.md
+
 ## Contributors
 
 - **Barthez Kenwou**: [**01Barthez**](https://github.com/01Barthez)
