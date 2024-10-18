@@ -19,6 +19,7 @@ import { useNavigate } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"
 import SeparatorLine from "../../components/custom/SeparatorLine"
 import { formSchema } from "../../global/constant/Constant"
+import SEO from "../../components/custom/SEO"
 
 
 const Login: React.FC = () => {
@@ -50,6 +51,10 @@ const Login: React.FC = () => {
   return (
 
     <>
+      <SEO
+        title="Login | Chisfis Projet"
+        description="Access your account to manage bookings and preferences."
+      />
       <div
         className="animate-incommingBox text-foreground w-fit mx-auto flex flex-col items-center gap-8 md:gap-16 bg-card shadow rounded-3xl my-8 md:my-16 py-8 md:py-16 px-2 md:px-20"
       >
@@ -70,7 +75,7 @@ const Login: React.FC = () => {
           <ConnexionsMethods />
 
           {/*  Separator Line */}
-          <SeparatorLine/>
+          <SeparatorLine />
 
           {/* Formulmire de connecion */}
           <Form {...form}>

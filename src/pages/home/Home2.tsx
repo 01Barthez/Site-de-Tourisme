@@ -15,10 +15,17 @@ import HappeningsCity from '../../components/custom/Sections/HappeningsCity'
 import HappeningsCity2 from '../../components/custom/Sections/HappeningsCity2'
 import HowItWorks from '../../components/custom/Sections/HowItWorks'
 import FindYourBest from '../../components/custom/Sections/FindYourBest'
+import SEO from '../../components/custom/SEO'
 
 const Home2: React.FC = () => {
   return (
     <>
+     <SEO
+        title="Home2 | Chisfis Projet" 
+        description="Welcome to Chisfis Projet, the best place to find amazing stays."
+        keywords="home, best stays, hotels, bookings"
+      />
+
       <FindYourBest />
       <HowItWorks />
       <HappeningsCity />

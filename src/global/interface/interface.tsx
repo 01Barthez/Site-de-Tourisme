@@ -120,5 +120,14 @@ export interface FetchState<T> {
     loading: boolean;
     error: string | null;
     fetchData: (url: string) => Promise<void>;
-  }
-  
+}
+
+export interface ISEOProps {
+    title: string;
+    description: string;
+    keywords?: string;
+    image?: string;
+    url?: string;
+    author?: string;
+    type?: string;
+}
