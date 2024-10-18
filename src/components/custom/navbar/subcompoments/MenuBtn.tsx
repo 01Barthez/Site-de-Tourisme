@@ -2,6 +2,10 @@ import { AiOutlineMenu } from "react-icons/ai";
 import React from 'react'
 import { Button } from '../../../ui/button'
 
+/**
+ * Functional component representing a menu button in a React application.
+ * @returns JSX element that renders a button with an icon for the menu.
+ */
 const MenuBtn: React.FC = () => {
     return (
         <div>

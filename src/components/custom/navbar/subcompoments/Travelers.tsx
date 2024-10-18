@@ -8,6 +8,10 @@ import {
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 
+/**
+ * Functional component for a dropdown menu with content related to travelers.
+ * @returns JSX element representing the dropdown menu for travelers.
+ */
 const Travelers: React.FC = () => {
     return (
         <DropdownMenu>

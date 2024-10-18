@@ -19,6 +19,11 @@ import { useNavigate } from "react-router-dom";
 import { Value, ValueHome } from "../../../global/interface/interface";
 import { createPortal } from 'react-dom';
 
+/**
+ * Functional component for a Parameters Button in a React application.
+ * This component renders a button with dropdown menu content for selecting values.
+ * @returns JSX element for the Parameters Button component.
+ */
 const ParamsBtn: React.FC = () => {
     const deviceWidth = useDeviceWidth();
     const dropdownWidth = useMemo(() => deviceWidth / 3.3, [deviceWidth]);

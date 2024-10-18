@@ -2,6 +2,10 @@ import React from 'react'
 import GridContentBox from '../GridContentBox'
 import { ExploreNearlyZone } from '../../../global/mocks/ExploreNearlyZone'
 
+/**
+ * Functional component that represents the "Explore Nearby" section.
+ * @returns JSX element representing the "Explore Nearby" section.
+ */
 const ExploreNearby: React.FC = () => {
   return (
 

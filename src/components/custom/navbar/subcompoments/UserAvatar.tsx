@@ -20,6 +20,11 @@ import { Link } from "react-router-dom";
 import { useTheme } from "../../../../hooks/useTheme";
 import { Switch } from "../../../ui/switch";
 
+/**
+ * Functional component for displaying a user avatar.
+ * This component includes functionality for changing themes and logging out.
+ * @returns JSX element for the UserAvatar component
+ */
 const UserAvatar: React.FC = () => {
     // gerer la deconexion
     const deconnexion = () => {
@@ -29,7 +34,7 @@ const UserAvatar: React.FC = () => {
     const { setTheme } = useTheme()
     const [isChecked, setIsChecked] = useState<boolean>(true)
 
-    const changeTheme = (e) => {
+    const changeTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         setTheme(isChecked ? "dark" : "light");
         setIsChecked((prev) => !prev);

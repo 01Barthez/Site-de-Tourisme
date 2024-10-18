@@ -7,6 +7,11 @@ import Navbar2 from './Navbar2';
 import Navbar3 from './Navbar3';
 import SmallUpNavbar from './SmallUpNavbar';
 
+/**
+ * Functional component for the Navbar.
+ * This component displays a navigation bar based on the selectedNav state.
+ * @returns JSX element representing the Navbar.
+ */
 const Navbar: React.FC = () => {
     const { selectedNav } = useSetNavbar();
 

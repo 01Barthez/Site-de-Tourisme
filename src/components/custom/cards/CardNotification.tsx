@@ -3,7 +3,20 @@ import { INotifications, ITruncateText } from '../../../global/interface/interfa
 import { Link } from 'react-router-dom';
 import { Avatar, AvatarFallback, AvatarImage } from '../../ui/avatar';
 
+/**
+ * Functional component for displaying a card notification.
+ * @param {INotifications} props - The properties for the card notification.
+ * @returns JSX element for the card notification.
+ */
+
 const CardNotification: React.FC<INotifications> = (props) => {
+    /**
+     * Functional component that truncates the given text to a specified word limit.
+     * @param {string} text - The text to be truncated.
+     * @param {number} [wordLimit=5] - The maximum number of words to display before truncating.
+     * @returns JSX element containing the truncated text.
+     */
+
     const TruncateText: React.FC<ITruncateText> = ({ text, wordLimit = 5 }) => {
         // Séparer le texte en mots
         const words = text.split(' ');
@@ -16,6 +29,11 @@ const CardNotification: React.FC<INotifications> = (props) => {
         return <p className="text-foreground/70">{truncatedText}</p>;
     };
 
+    /**
+     * Converts a given time in seconds to a human-readable format indicating how long ago it occurred.
+     * @param {number} time - The time in seconds to convert.
+     * @returns {string} A human-readable string indicating how long ago the time occurred.
+     */
     const ConvertTime: React.FC<number> = (time): string => {
         let messageTime = "now";
         if (time > (3600 * 24)) {

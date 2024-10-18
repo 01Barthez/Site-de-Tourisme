@@ -2,6 +2,11 @@ import React from 'react'
 import { Badge } from '../../ui/badge';
 import { ICardBenefits } from '../../../global/interface/interface';
 
+/**
+ * Functional component for displaying card benefits.
+ * @param {ICardBenefits} props - The properties passed to the component.
+ * @returns JSX element representing the card benefits.
+ */
 const CardBenefits: React.FC<ICardBenefits> = (props) => {
     return (
         <div className='flex flex-col gap-4'>

@@ -1,6 +1,10 @@
 import React from 'react'
 import CardBenefits from '../cards/CardBenefits'
 
+/**
+ * Functional component for displaying information about Happening cities.
+ * @returns JSX element representing the HappeningsCity component.
+ */
 const HappeningsCity: React.FC = () => {
   return (
     <section className='container py-10 md:py-16 '>

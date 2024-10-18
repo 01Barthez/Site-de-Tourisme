@@ -12,6 +12,11 @@ import { ScrollArea } from '../../../ui/scroll-area'
 import CardNotification from '../../cards/CardNotification'
 import { NotificationUsers } from '../../../../global/mocks/NotificationsUsers'
 
+/**
+ * Functional component for a notification button using React.
+ * It renders a dropdown menu with a trigger button that displays notifications.
+ * @returns JSX element representing the notification button component.
+ */
 const NotificationBtn: React.FC = () => {
     return (
         <DropdownMenu>

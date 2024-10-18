@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '../../../ui/hover-card'
 import { FiChevronDown } from 'react-icons/fi'
 
+/**
+ * Functional component for rendering a navigation links list.
+ * @returns JSX element representing the navigation links list.
+ */
 const NavLinks1: React.FC = () => {
     return (
         <ul className="relative flex items-center gap-2">

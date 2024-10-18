@@ -2,6 +2,11 @@ import React, { useId } from 'react'
 import { IFootersLinks } from '../../../global/interface/interface'
 import { Link } from 'react-router-dom';
 
+/**
+ * Functional component for rendering a footer column with links.
+ * @param {IFootersLinks} props - The properties for the footer column.
+ * @returns JSX element representing the footer column with links.
+ */
 const FooterCol: React.FC<IFootersLinks> = (props) => {
     const Tab = props.links;
     const id = useId();

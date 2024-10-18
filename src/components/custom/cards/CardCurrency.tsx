@@ -2,6 +2,13 @@ import React from 'react'
 import { ToggleGroupItem } from '../../ui/toggle-group'
 import { ITabCurrency } from '../../../global/interface/interface'
 
+/**
+ * Functional component for displaying a currency card.
+ * @param {ITabCurrency} icon - The icon representing the currency.
+ * @param {ITabCurrency} abbrev - The abbreviation of the currency.
+ * @returns JSX element for the currency card.
+ */
+
 const CardCurrency: React.FC<ITabCurrency> = ({ icon, abbrev }) => {
   return (
 

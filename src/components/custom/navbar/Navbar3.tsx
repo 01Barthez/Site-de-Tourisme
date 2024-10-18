@@ -6,6 +6,10 @@ import UserAvatar from './subcompoments/UserAvatar'
 import CenterMenu from './subcompoments/CenterMenu'
 import MenuBtn from './subcompoments/MenuBtn'
 
+/**
+ * Functional component for a Navbar with logo, notification button, user avatar, and menu button.
+ * @returns JSX element representing the Navbar component.
+ */
 const Navbar3: React.FC = () => {
   return (
     <div className=" flex justify-between items-center">

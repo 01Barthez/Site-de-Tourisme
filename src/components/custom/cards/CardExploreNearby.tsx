@@ -3,6 +3,11 @@ import { ICardExploreNearby } from '../../../global/interface/interface'
 import { Card } from '../../ui/card'
 import { Link } from 'react-router-dom'
 
+/**
+ * Functional component for rendering a card to explore nearby locations.
+ * @param {ICardExploreNearby} props - The properties passed to the component.
+ * @returns JSX element representing the card with details of the nearby location.
+ */
 const CardExploreNearby: React.FC<ICardExploreNearby> = (props) => {
     return (
         <Card className='w-full md:w-fit rounded-3xl p-2 shadow-none hover:bg-primary/5 hover:shadow-xl duration-200'>

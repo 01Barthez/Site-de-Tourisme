@@ -2,6 +2,11 @@ import React from 'react'
 import { ILanguages } from '../../../global/interface/interface'
 import { ToggleGroupItem } from '../../ui/toggle-group'
 
+/**
+ * Functional component for displaying a card with language and region information.
+ * @param {ILanguages} lang - The language object containing language and region information.
+ * @returns JSX element representing the card with language and region details.
+ */
 const CardLang: React.FC<ILanguages> = ({ lang, region }) => {
   return (
 

@@ -12,6 +12,12 @@ import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
     
 
+/**
+ * Creates a router with specified routes and elements for each route.
+ * @param {Array} routes - An array of route objects containing path and element information.
+ * @returns None
+ */
+
 const Router = createBrowserRouter([
     {
         path: "/",
@@ -32,7 +38,7 @@ errorElement: <>
             {
                 path: '',
                 element: <>
-                    <Navbar />
+                        <Navbar />
                     <Outlet />
                     <Footer />
                 </>,

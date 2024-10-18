@@ -2,6 +2,11 @@ import React from 'react'
 import { Button } from '../../../ui/button'
 import { Link } from 'react-router-dom'
 
+/**
+ * Functional component that renders a link to the '/listing-stay' page with a button.
+ * The button has specific styling classes applied for appearance.
+ * @returns JSX element representing the ListProperty component.
+ */
 const ListProperty: React.FC = () => {
   return (
     <Link

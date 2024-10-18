@@ -8,6 +8,10 @@ import Templates from './subcompoments/Templates'
 import LanguageCurrent from './subcompoments/Language_Current'
 import ListProperty from './subcompoments/ListProperty'
 
+/**
+ * Functional component for Navbar2.
+ * @returns JSX element representing Navbar2 with Logo, Separator, NotificationBtn, and UserAvatar components.
+ */
 const Navbar2: React.FC = () => {
   return (
     <div className='flex items-center justify-between'>

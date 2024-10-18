@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import FooterCol from './FooterCol'
 import { FootersLinks, SocialLink } from '../../../global/mocks/footer-mocks'
 
+/**
+ * Functional component for the footer section of a React application.
+ * @returns JSX element representing the footer section with various links and content.
+ */
 const Footer: React.FC = () => {
   return (
     <footer className='w-screen overflow-hidden py-16 md:py-28 border-t border-t-foreground/20 bg-background text-foreground'>

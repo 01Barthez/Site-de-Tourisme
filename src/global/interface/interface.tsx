@@ -35,7 +35,7 @@ export interface IHouseDiscorvery {
 }
 
 export interface ICardSuggestionDiscorvery {
-    url: string; 
+    url: string;
     image: string;
     name: string;
     properties_number: number;
@@ -85,7 +85,7 @@ export interface ITruncateText {
 }
 
 export interface IAuthor {
-    id:number;
+    id: number;
     url: string;
     image: string;
     name: string;
@@ -107,5 +107,10 @@ export interface ITabCurrency {
 
 export interface ISwipperCarousel {
     content: IHouseDiscorvery[]; // L'objet doit avoir une clé `content` avec un tableau
-  }
-  
+}
+
+export interface ICardHowItWork {
+    image: string;
+    title: string;
+    description: string;
+}

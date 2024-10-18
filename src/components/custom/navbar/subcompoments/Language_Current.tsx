@@ -21,6 +21,10 @@ import { ToggleGroup } from "../../../ui/toggle-group";
 import CardCurrency from "../../cards/CardCurrency";
 import { TabCurrency } from "../../../../global/mocks/MockCurrency";
 
+/**
+ * Functional component for displaying the current language in a dropdown menu.
+ * @returns JSX element for the LanguageCurrent component.
+ */
 const LanguageCurrent: React.FC = () => {
   const id = useId();
   const id2 = useId();

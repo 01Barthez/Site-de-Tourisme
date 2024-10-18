@@ -7,6 +7,12 @@ import { Input } from '../../ui/input'
 import { useNavigate } from 'react-router-dom'
 import NavLinks1 from './subcompoments/NavLinks1'
 
+/**
+ * Functional component for Navbar1.
+ * This component renders a navigation bar with a search bar that can be toggled to show/hide.
+ * It also includes a button to navigate to the login page.
+ * @returns JSX element representing the Navbar1 component.
+ */
 const Navbar1: React.FC = () => {
     const navigate = useNavigate();
     const [hiddenSearchBar, setHiddenSearchBar] = useState<boolean>(true);

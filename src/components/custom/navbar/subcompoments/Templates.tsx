@@ -9,6 +9,10 @@ import { HiOutlineChevronDown } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 import { Button } from '../../../ui/button'
 
+/**
+ * Functional component that renders a dropdown menu with various template options.
+ * @returns JSX element representing the dropdown menu with template options.
+ */
 const Templates: React.FC = () => {
   return (
     <DropdownMenu>

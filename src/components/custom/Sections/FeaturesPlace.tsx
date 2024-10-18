@@ -5,6 +5,10 @@ import { Button } from '../../ui/button'
 import { ToggleGroup, ToggleGroupItem } from "../../ui/toggle-group";
 
 export type Place = "NewYork" | "Tokyo" | "Paris" | "London"
+/**
+ * Functional component that displays a section of featured places to stay.
+ * @returns JSX element containing the section with featured places.
+ */
 const FeaturesPlace: React.FC = () => {
   const [selectedPlace, setSelectedPlace] = useState<Place>('NewYork');
 

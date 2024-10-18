@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import { Button } from '../../ui/button'
 import { RxDashboard } from "react-icons/rx";
 
+/**
+ * Functional component for displaying a photo gallery.
+ * @returns JSX element representing the photo gallery component.
+ */
 const Photos: React.FC = () => {
     return (
         <div className='flex gap-2 container md:gap-4 '>

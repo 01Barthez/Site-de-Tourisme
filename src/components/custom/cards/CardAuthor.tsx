@@ -6,6 +6,12 @@ import { FaStar } from "react-icons/fa";
 
 import { ITruncateText } from '../../../global/interface/interface'
 
+/**
+ * Functional component that truncates the given text if it exceeds the word limit.
+ * @param {ITruncateText} text - The text to be truncated.
+ * @param {number} [wordLimit=8] - The maximum number of words before truncation.
+ * @returns JSX element containing the truncated text.
+ */
 const TruncatedText: React.FC<ITruncateText> = ({text,wordLimit = 8}) => {
   const truncatedText = text.length > wordLimit
   ?text.slice(0, wordLimit)+ '...'
@@ -14,6 +20,11 @@ const TruncatedText: React.FC<ITruncateText> = ({text,wordLimit = 8}) => {
 return <p >{truncatedText}</p>;
 }
 
+/**
+ * Functional component for displaying the author information in a card format.
+ * @param {IAuthor} props - The author information including name, image, url, and country.
+ * @returns JSX element representing the card with author information.
+ */
 const CardAuthor: React.FC<IAuthor> = (props) => {
     return (
         <Card className='w-full md:w-fit relative p-6'>

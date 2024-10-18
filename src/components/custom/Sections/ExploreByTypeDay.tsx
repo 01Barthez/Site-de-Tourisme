@@ -2,6 +2,10 @@ import React from 'react'
 import SwipperCarouselExploreHouse from '../SwipperCarouselExploreHouse'
 import { HouseDiscorvery } from '../../../global/mocks/suggestionsExploreHouses'
 
+/**
+ * Functional component that displays a section for exploring different types of stays.
+ * @returns JSX element containing the section for exploring types of stays.
+ */
 const ExploreByTypeDay: React.FC = () => {
   return (
     <section className='container py-10 md:py-16 space-y-10'>
