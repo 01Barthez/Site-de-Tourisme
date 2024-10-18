@@ -16,6 +16,7 @@ import { Link } from "react-router-dom"
 import { toast } from "../../hooks/use-toast"
 import { useNavigate } from "react-router-dom";
 import { formSchemaEmail } from "../../global/constant/Constant"
+import SEO from "../../components/custom/SEO"
 
 const ForgotPwd: React.FC = () => {
   const navigate = useNavigate();
@@ -42,8 +43,12 @@ const ForgotPwd: React.FC = () => {
   }
 
   return (
-
     <>
+      <SEO
+        title="Forgot-Password | Chisfis Projet"
+        description="Access your account to manage bookings and preferences."
+      />
+      
       <div
         className="animate-incommingBox text-foreground w-fit mx-auto flex flex-col items-center gap-6 md:gap-8 bg-card shadow rounded-3xl my-8 md:my-16 py-8 md:py-16 px-2 md:px-20"
       >
@@ -112,7 +117,7 @@ const ForgotPwd: React.FC = () => {
               to="/signup"
               className="text-foreground  hover:text-foreground2 font-medium underline"
             >
-             Sign in
+              Sign in
             </Link>
             /
             <Link

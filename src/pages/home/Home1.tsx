@@ -12,10 +12,16 @@ import ExploreNearby from '../../components/custom/Sections/ExploreNearby'
 import ExploreByTypeDay from '../../components/custom/Sections/ExploreByTypeDay'
 import TheVideos from '../../components/custom/Sections/TheVideos'
 import GoodNews from '../../components/custom/Sections/GoodNews'
+import SEO from '../../components/custom/SEO'
 
 const Home1: React.FC = () => {
   return (
     <>
+     <SEO
+        title="Home | Chisfis Projet" 
+        description="Welcome to Chisfis Projet, the best place to find amazing stays."
+        keywords="home, best stays, hotels, bookings"
+      />
       <HotelExperience />
       <Suggestions />
       <HappeningsCity />

@@ -10,7 +10,8 @@ import {
 } from '../../../ui/dropdown-menu'
 import { ScrollArea } from '../../../ui/scroll-area'
 import CardNotification from '../../cards/CardNotification'
-import { NotificationUsers } from '../../../../global/mocks/NotificationsUsers'
+import { useFetch } from '../../../../hooks/useFetch'
+// import { NotificationUsers } from '../../../../global/mocks/NotificationsUsers'
 
 /**
  * Functional component for a notification button using React.
@@ -18,6 +19,8 @@ import { NotificationUsers } from '../../../../global/mocks/NotificationsUsers'
  * @returns JSX element representing the notification button component.
  */
 const NotificationBtn: React.FC = () => {
+    const { data, loading, error } = useFetch('https://670fc6caa85f4164ef2bdfb1.mockapi.io/notification');
+    const NotificationUsers = data;
     return (
         <DropdownMenu>
             <DropdownMenuTrigger>
@@ -41,26 +44,28 @@ const NotificationBtn: React.FC = () => {
                     Notifications
                 </DropdownMenuLabel>
 
-                <ScrollArea className="h-64 w-fit">
-                    {
-                        NotificationUsers.map((notif) => (
-                            <DropdownMenuItem className='hover:bg-background/5 mb-2 rounded-lg duration-200'>
-                                <CardNotification
-                                    id={notif.id}
-                                    url={notif.url}
-                                    profile={notif.profile}
-                                    name={notif.name}
-                                    message={notif.message}
-                                    time={notif.time}
-                                />
-                            </DropdownMenuItem>
-                        ))
-                    }
-
-                </ScrollArea>
+                {loading ? 'loading...' :
+                    (error ? `An error occured ${error}` :
+                        <ScrollArea className="h-64 w-fit">
+                            {
+                                NotificationUsers.map((notif) => (
+                                    <DropdownMenuItem className='hover:bg-background/5 mb-2 rounded-lg duration-200'>
+                                        <CardNotification
+                                            id={notif.id}
+                                            url={`notifications/${notif.url}`}
+                                            profile={notif.profile}
+                                            name={notif.name}
+                                            message={notif.message}
+                                            time={notif.time}
+                                        />
+                                    </DropdownMenuItem>
+                                ))
+                            }
+                        </ScrollArea>
+                    )
+                }
             </DropdownMenuContent>
         </DropdownMenu>
-
     )
 }
 

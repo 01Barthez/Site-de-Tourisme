@@ -114,3 +114,20 @@ export interface ICardHowItWork {
     title: string;
     description: string;
 }
+
+export interface FetchState<T> {
+    data: T | null;
+    loading: boolean;
+    error: string | null;
+    fetchData: (url: string) => Promise<void>;
+}
+
+export interface ISEOProps {
+    title: string;
+    description: string;
+    keywords?: string;
+    image?: string;
+    url?: string;
+    author?: string;
+    type?: string;
+}

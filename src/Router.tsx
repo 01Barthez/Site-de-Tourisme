@@ -10,7 +10,8 @@ import Navbar from "./components/custom/navbar/Navbar";
 import Stay from "./pages/Stay";
 import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
-    
+import ScrollToTop from "./components/custom/ScrollToTop";
+
 
 /**
  * Creates a router with specified routes and elements for each route.
@@ -24,12 +25,15 @@ const Router = createBrowserRouter([
         element: <>
             <Outlet />
 
+            {/* To scroll to top each time that we change routes */}
+            <ScrollToTop />
+
             {/* Portail pour le settings */}
             <ParamsBtn />,
         </>,
 
-// Page erreur
-errorElement: <>
+        // Page erreur
+        errorElement: <>
             <PageError />
         </>,
 
@@ -38,7 +42,7 @@ errorElement: <>
             {
                 path: '',
                 element: <>
-                        <Navbar />
+                    <Navbar />
                     <Outlet />
                     <Footer />
                 </>,
@@ -68,11 +72,11 @@ errorElement: <>
                         </>
                     },
 
-                       // First Home page
-                       {
+                    // First Home page
+                    {
                         path: 'stay/',
                         element: <>
-                            <Stay/>
+                            <Stay />
                         </>
                     },
                 ]
