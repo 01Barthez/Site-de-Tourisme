@@ -24,8 +24,9 @@ const TopAuthor: React.FC = () => {
           <GridAuthorBox TableToMap={TopAuthorsMock} />
         </div>
         
-        <div className='flex items-center gap-1 mx-auto'>
-          <Button
+        <div className='bg-black'>
+        <div className='flex justify-around p-' >
+        <Button
             variant="outline"
             className='mx-auto text-lg p-6 rounded-full flex items-center gap-2'
           // onClick={selected3}
@@ -39,6 +40,7 @@ const TopAuthor: React.FC = () => {
           >
             Become a host
           </Button>
+        </div>
         </div>
       </div>
     </section>
