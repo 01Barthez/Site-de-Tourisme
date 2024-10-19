@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { FaStar } from "react-icons/fa";
 
 import { ITruncateText } from '../../../global/interface/interface'
+import { Badge } from '../../ui/badge';
+import CardAdvantages from './CardAdvantages';
 
 /**
  * Functional component that truncates the given text if it exceeds the word limit.
@@ -20,14 +22,29 @@ const TruncatedText: React.FC<ITruncateText> = ({text,wordLimit = 8}) => {
 return <p >{truncatedText}</p>;
 }
 
+// const handleId : React.FC<IAuthor> = (props) => {
+//        const id ={ props}
+//         id === 3 ? <Badge>{props.id}</Badge> : break;
+// }
+
 /**
  * Functional component for displaying the author information in a card format.
  * @param {IAuthor} props - The author information including name, image, url, and country.
  * @returns JSX element representing the card with author information.
  */
 const CardAuthor: React.FC<IAuthor> = (props) => {
+     
     return (
         <Card className='w-full md:w-fit relative p-6'>
+        <CardAdvantages
+          badge={{
+            content: `${props.id}`,
+            variant: 'blue'
+          }}
+          content=''
+        />
+
+     
             <Link to={props.url} className='flex flex-col items-center gap-4'>
 
                 <div className="w-24 h-24 rounded-full overflow-hidden">

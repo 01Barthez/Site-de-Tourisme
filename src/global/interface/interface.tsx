@@ -85,7 +85,7 @@ export interface ITruncateText {
 }
 
 export interface IAuthor {
-    id: number;
+    id: string
     url: string;
     image: string;
     name: string;
