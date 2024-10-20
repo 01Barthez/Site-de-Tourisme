@@ -122,6 +122,9 @@ importers:
       react-router-dom:
         specifier: ^6.27.0
         version: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-scroll-progress-bar:
+        specifier: ^2.0.3
+        version: 2.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-slick:
         specifier: ^0.30.2
         version: 0.30.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2118,6 +2121,12 @@ packages:
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
+
+  react-scroll-progress-bar@2.0.3:
+    resolution: {integrity: sha512-CJ8L/X/oJMei6Pi3LaAG7seLahpdBc3CMNY+hhkmUUtPjND8W8Bva32OipESm2rj5ulkezym05DxKupeAjldzQ==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   react-side-effect@2.1.2:
     resolution: {integrity: sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==}
@@ -4251,6 +4260,11 @@ snapshots:
     dependencies:
       '@remix-run/router': 1.20.0
       react: 18.3.1
+
+  react-scroll-progress-bar@2.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-side-effect@2.1.2(react@18.3.1):
     dependencies:

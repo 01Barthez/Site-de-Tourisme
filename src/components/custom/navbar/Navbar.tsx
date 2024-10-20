@@ -8,6 +8,7 @@ import Navbar3 from './Navbar3';
 import SmallUpNavbar from './SmallUpNavbar';
 import FallbackNavbarUI from '../../../pages/errors/FallbackNavbarUI';
 import { ErrorBoundary } from 'react-error-boundary';
+import ProgressBar from "react-scroll-progress-bar"
 
 /**
  * Functional component for the Navbar.
@@ -33,6 +34,7 @@ const Navbar: React.FC = () => {
                                 <Navbar2 /> : <Navbar3 />)
                     }
                 </nav>
+                <ProgressBar />
             </header>
         </ErrorBoundary>
     )
