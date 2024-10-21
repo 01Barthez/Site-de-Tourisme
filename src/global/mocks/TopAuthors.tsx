@@ -3,6 +3,7 @@ import { IAuthor } from "../interface/interface";
 export const TopAuthorsMock: IAuthor[] = [
     {
         id:' #1',
+        variant : 'red',
         url: "https://chisfis-nextjs.vercel.app/author",
         image: "/src/assets/discover.svg",
         name: "Kevin Franci",
@@ -10,6 +11,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '#2',
+        variant : 'blue',
         image: "/public/Image.svg",
         url: "https://chisfis-nextjs.vercel.app/author",
         name: "Birell",
@@ -17,6 +19,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '#3',
+        variant :'green',
         url: "https://chisfis-nextjs.vercel.app/author",
         image: "/src/assets/discover.svg",
         name: "Marcell",
@@ -24,6 +27,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '',
+        variant :'transparent',
         image: "/public/Image.svg",
         url: "https://chisfis-nextjs.vercel.app/author",
         name: "Kimberly",
@@ -31,6 +35,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '',
+        variant : 'transparent',
         url: "https://chisfis-nextjs.vercel.app/author",
         image: "/src/assets/discover.svg",
         name: "Kevin Franci",
@@ -38,6 +43,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '',
+        variant : 'transparent',
         image: "/public/Image.svg",
         url: "https://chisfis-nextjs.vercel.app/author",
         name: "Birell",
@@ -45,6 +51,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '',
+        variant : 'transparent',
         url: "https://chisfis-nextjs.vercel.app/author",
         image: "/src/assets/discover.svg",
         name: "Kevin Franci",
@@ -52,6 +59,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '',
+        variant : 'transparent',
         image: "/public/Image.svg",
         url: "https://chisfis-nextjs.vercel.app/author",
         name: "Birell",
@@ -59,6 +67,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id: '',
+        variant : 'transparent',
         url: "https://chisfis-nextjs.vercel.app/author",
         image: "/src/assets/discover.svg",
         name: "Kevin Franci",
@@ -66,6 +75,7 @@ export const TopAuthorsMock: IAuthor[] = [
     },
     {
         id:'',
+        variant : 'transparent',
         image: "/public/Image.svg",
         url: "https://chisfis-nextjs.vercel.app/author",
         name: "Birell",

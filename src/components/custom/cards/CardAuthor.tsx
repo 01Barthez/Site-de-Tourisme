@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { FaStar } from "react-icons/fa";
 
 import { ITruncateText } from '../../../global/interface/interface'
-import { Badge } from '../../ui/badge';
+
 import CardAdvantages from './CardAdvantages';
 
 /**
@@ -39,9 +39,9 @@ const CardAuthor: React.FC<IAuthor> = (props) => {
         <CardAdvantages
           badge={{
             content: `${props.id}`,
-            variant: 'blue'
+            variant: `${props.variant}` 
           }}
-          content=''
+         
         />
 
      
@@ -65,7 +65,7 @@ const CardAuthor: React.FC<IAuthor> = (props) => {
                     <p className="text-sm text-foreground/70 text-nowrap">
                         {props.country} 
                     </p>
-                    <button className='flex items-center bg-transparent rounded-full hover:bg-slate-500hover:-translate-y-1 hover:scale-110 duration-300 text-6 p-2 gap-4 bg-gray-300'>4.9 <span><FaStar className='text-yellow-300' /></span></button>
+                    <button className='flex items-center   rounded-full hover:bg-slate-300 hover:-translate-y-1 hover:scale-110 duration-300 text-4 p-1 gap-4 bg-gray-100'>4.9 <span><FaStar className='text-yellow-300' /></span></button>
                 </div>
             </Link>
         </Card>

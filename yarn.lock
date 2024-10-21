@@ -2565,6 +2565,11 @@ react-router@6.27.0:
   dependencies:
     "@remix-run/router" "1.20.0"
 
+react-scroll-progress-bar@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-progress-bar/-/react-scroll-progress-bar-2.0.3.tgz#f3b4847f408d3fc4d3bd9f60386cff8c441a461a"
+  integrity sha512-CJ8L/X/oJMei6Pi3LaAG7seLahpdBc3CMNY+hhkmUUtPjND8W8Bva32OipESm2rj5ulkezym05DxKupeAjldzQ==
+
 react-side-effect@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"

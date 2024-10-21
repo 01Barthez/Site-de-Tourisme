@@ -11,6 +11,7 @@ const GridAuthorBox: React.FC<IGridAuthorBox> = ({ TableToMap }) => {
                 TableToMap.map((zone) => (
                     <CardAuthor
                         id={zone.id}
+                        variant={zone.variant}
                         url={zone.url}
                         image={zone.image}
                         name={zone.name}

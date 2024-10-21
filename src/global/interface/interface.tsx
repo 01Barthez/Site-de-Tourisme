@@ -53,7 +53,7 @@ export interface ICardBenefits {
 export interface ICardAdvantages {
     badge: {
         content: string;
-        variant?: 'blue' | 'green' | 'red';
+        variant?: 'blue' | 'green' | 'red' | 'transparent';
     }
     content: string;
 }
@@ -86,6 +86,7 @@ export interface ITruncateText {
 
 export interface IAuthor {
     id: string
+    variant?: 'blue' | 'green' | 'red' | 'transparent' ;
     url: string;
     image: string;
     name: string;
