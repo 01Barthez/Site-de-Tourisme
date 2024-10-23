@@ -65,7 +65,7 @@ const CardAuthor: React.FC<IAuthor> = (props) => {
                     <p className="text-sm text-foreground/70 text-nowrap">
                         {props.country} 
                     </p>
-                    <button className='flex items-center   rounded-full hover:bg-slate-300 hover:-translate-y-1 hover:scale-110 duration-300 text-4 p-1 gap-4 bg-gray-100'>4.9 <span><FaStar className='text-yellow-300' /></span></button>
+                    <button className='flex items-center  rounded-full hover:bg-slate-300 hover:-translate-y-1 hover:scale-110 duration-300 text-4 p-1 gap-4 bg-gray-100'>4.9 <span><FaStar className='text-yellow-300' /></span></button>
                 </div>
             </Link>
         </Card>
