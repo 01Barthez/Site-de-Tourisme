@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../Logo'
 import ListProperty from './subcompoments/ListProperty'
-import NotificationBtn from './subcompoments/NotificationBtn'
+// import NotificationBtn from './subcompoments/NotificationBtn'
 import UserAvatar from './subcompoments/UserAvatar'
 import CenterMenu from './subcompoments/CenterMenu'
 import MenuBtn from './subcompoments/MenuBtn'
@@ -30,7 +30,7 @@ const Navbar3: React.FC = () => {
         <ListProperty />
 
         {/* Notification button */}
-        <NotificationBtn />
+        {/* <NotificationBtn /> */}
 
         {/* USER ACCOUNT */}
           <UserAvatar />

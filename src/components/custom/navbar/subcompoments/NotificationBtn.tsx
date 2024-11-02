@@ -11,9 +11,9 @@ import {
 } from '../../../ui/dropdown-menu'
 import { ScrollArea } from '../../../ui/scroll-area'
 import CardNotification from '../../cards/CardNotification'
-import { useFetch } from '../../../../hooks/useFetch'
+// import { useFetch } from '../../../../hooks/useFetch'
 import { ErrorBoundary } from "react-error-boundary";
-// import { NotificationUsers } from '../../../../global/mocks/NotificationsUsers'
+import { NotificationUsers } from "../../../../global/mocks/NotificationsUsers";
 
 /**
  * Functional component for a notification button using React.
@@ -21,8 +21,8 @@ import { ErrorBoundary } from "react-error-boundary";
  * @returns JSX element representing the notification button component.
  */
 const NotificationBtn: React.FC = () => {
-    const { data, loading, error } = useFetch('https://670fc6caa85f4164ef2bdfb1.mockapi.io/notification');
-    const NotificationUsers = data;
+    // const { data, loading, error } = useFetch('https://670fc6caa85f4164ef2bdfb1.mockapi.io/notification');
+    // const NotificationUsers = data;
 
     return (
         <>
@@ -32,7 +32,7 @@ const NotificationBtn: React.FC = () => {
                         <Button
                             variant='outline'
                             size="icon"
-                            className="relative w-auto h-auto p-3 text-xl border-none bg-transparent shadow-none rounded-full hover:bg-foreground/5 duration-200"
+                            className="relative w-auto h-auto p-3 text-xl duration-200 bg-transparent border-none rounded-full shadow-none hover:bg-foreground/5"
                         >
                             <div className="relative">
                                 {/* Icon Bell */}
@@ -49,12 +49,12 @@ const NotificationBtn: React.FC = () => {
                             Notifications
                         </DropdownMenuLabel>
 
-                        {loading ? 'loading...' :
-                            (error ? `An error occured ${error}` :
+                        {/* {loading ? 'loading...' : */}
+                            {/* (error ? `An error occured ${error}` : */}
                                 <ScrollArea className="h-64 w-fit">
                                     {
                                         NotificationUsers.map((notif) => (
-                                            <DropdownMenuItem className='hover:bg-background/5 mb-2 rounded-lg duration-200'>
+                                            <DropdownMenuItem className='mb-2 duration-200 rounded-lg hover:bg-background/5'>
                                                 <CardNotification
                                                     id={notif.id}
                                                     url={`notifications/${notif.url}`}
@@ -67,13 +67,12 @@ const NotificationBtn: React.FC = () => {
                                         ))
                                     }
                                 </ScrollArea>
-                            )
-                        }
+                            {/* ) */}
+                        {/* } */}
                     </DropdownMenuContent>
                 </DropdownMenu>
             </ErrorBoundary>
         </>
     )
-}
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                export default NotificationBtn
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+export default NotificationBtn
