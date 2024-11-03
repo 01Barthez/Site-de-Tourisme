@@ -76,7 +76,7 @@ export interface INotifications {
     name: string;
     profile: string;
     message: string;
-    time: number;
+    time: Date;
 }
 
 export interface ITruncateText {

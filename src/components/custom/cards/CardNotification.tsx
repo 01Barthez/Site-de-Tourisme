@@ -10,13 +10,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '../../ui/avatar';
  */
 
 const CardNotification: React.FC<INotifications> = (props) => {
-    /**
-     * Functional component that truncates the given text to a specified word limit.
-     * @param {string} text - The text to be truncated.
-     * @param {number} [wordLimit=5] - The maximum number of words to display before truncating.
-     * @returns JSX element containing the truncated text.
-     */
-
     const TruncateText: React.FC<ITruncateText> = ({ text, wordLimit = 5 }) => {
         // Séparer le texte en mots
         const words = text.split(' ');
@@ -29,33 +22,42 @@ const CardNotification: React.FC<INotifications> = (props) => {
         return <p className="text-foreground/70">{truncatedText}</p>;
     };
 
-    /**
-     * Converts a given time in seconds to a human-readable format indicating how long ago it occurred.
-     * @param {number} time - The time in seconds to convert.
-     * @returns {string} A human-readable string indicating how long ago the time occurred.
-     */
-    const ConvertTime: React.FC<number> = (time): string => {
-        let messageTime = "now";
-        if (time > (3600 * 24)) {
-            const days = Math.floor(time / (3600 * 24))
-            messageTime = `${days} day(s)ago`;
-        } else if (time > 3600) {
-            const heure = Math.floor(time / 3600)
-            const minutes = Math.floor(time % 3600)
-            messageTime = `${heure} hour(s) ${minutes > 0 ? `${minutes} minute(s)` : ''} ago`;
-        } else {
-            const minutes = Math.floor(time % 60)
-            messageTime = `${minutes} minutes ago`
-        }
+    const ConvertTime = (dateTime: Date): string => {
+        const date = new Date(dateTime);
+        const now = new Date();
+        const timeDifference = Math.max(Math.floor((now.getTime() - date.getTime()) / 1000), 0); // différence en secondes
 
-        return messageTime
+        if (isNaN(date.getTime())) {
+            return "Invalid date";
+        }
+        if (timeDifference === 0) {
+            return "Now"
+        } else if (timeDifference < 60) {
+            return `${timeDifference} second(s) ago`;
+        } else if (timeDifference < 3600) {
+            const minutes = Math.floor(timeDifference / 60);
+            return `${minutes} minute(s) ago`;
+        } else if (timeDifference < 86400) {
+            const hours = Math.floor(timeDifference / 3600);
+            const minutes = Math.floor((timeDifference % 3600) / 60);
+            return `${hours} hour(s) ${minutes > 0 ? `${minutes} minute(s)` : ''} ago`;
+        } else {
+            const days = Math.floor(timeDifference / 86400);
+            return `${days} day(s) ago`;
+        };
+    };
+
+    const splitName = (name: string): string => {
+        let result = "";
+        const tabName = name.toUpperCase().split(" ");
+        result = `${tabName[0].slice(0, 1)}${tabName[1].slice(0, 1)}`
+        return result;
     }
-    console.log(ConvertTime)
 
     return (
         <Link
             to={props.url}
-            className='flex items-center gap-4 hover:bg-background/5 duration-200'
+            className='group flex items-center gap-4 hover:bg-background/5 duration-200'
         >
             <Avatar className="w-14 h-14 rounded-full overflow-hidden">
                 <AvatarImage
@@ -63,8 +65,8 @@ const CardNotification: React.FC<INotifications> = (props) => {
                     alt={`profile of ${props.name}`}
                     className="w-full h-full object-cover"
                 />
-                <AvatarFallback className='w-full h-full'>
-                    CN
+                <AvatarFallback className='w-full h-full font-semibold group-hover:bg-foreground/10 duration-200'>
+                    {splitName(props.name)}
                 </AvatarFallback>
             </Avatar>
 
@@ -80,8 +82,8 @@ const CardNotification: React.FC<INotifications> = (props) => {
 
                 {/* delay */}
                 <span className="text-foreground/40 text-xs">
-                    {/* {ConvertTime(props.time)} */}
-                    {props.time} minutes ago
+                    {ConvertTime(props.time)}
+                    {/* {props.time} minutes ago */}
                 </span>
             </div>
 
