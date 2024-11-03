@@ -16,7 +16,7 @@ export const useFetchStore = create<FetchState<any>>()(
                 const response = await axios.get(url);
                 set({ data: response.data });
             } catch (error) {
-                const errorMessage = error instanceof Error ? error.message : "an error occured";
+                const errorMessage = error instanceof Error ? error.message : "Unknow error";
                 set({ error: errorMessage });
             } finally {
                 set({ loading: false });

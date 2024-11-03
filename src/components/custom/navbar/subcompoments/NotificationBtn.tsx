@@ -14,6 +14,7 @@ import { useFetch } from '../../../../hooks/useFetch'
 import { INotifications } from "../../../../global/interface/interface";
 import SkeletonNotificarions from "../../skeletons/SkeletonNotificarions";
 import { Base_URL } from "../../../../api/test";
+import ErrorNotification from '../../../../pages/errors/ErrorNotification'
 
 /**
  * Functional component for a notification button using React.
@@ -50,7 +51,7 @@ const NotificationBtn: React.FC = () => {
                     </DropdownMenuLabel>
 
                     {loading ? <SkeletonNotificarions /> :
-                        (error ? `An error occured ${error}` :
+                        (error ? <ErrorNotification error={error} /> :
                             <ScrollArea className="h-64 w-fit">
                                 {NotificationUsers &&
                                     NotificationUsers.map((notif: INotifications) => (
