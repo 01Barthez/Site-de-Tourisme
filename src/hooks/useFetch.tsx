@@ -1,12 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { useFetchStore } from './zustand-store/useFetchStore';
 
-export const useFetch = (url: string) => {
+export const useFetch = <T,>(url: string) => {
     const { data, loading, error, fetchData } = useFetchStore();
 
-    useEffect(() => {
-        fetchData(url)
-    }, [fetchData, url]);
+    const stableFetchData = useCallback(() => fetchData(url), [url]);
 
-    return { data, loading, error };
+    useEffect(() => {
+        stableFetchData();
+    }, [stableFetchData]);
+
+    return { data: data as T | null, loading, error };
 };

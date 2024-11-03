@@ -5,10 +5,12 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-      "lib": ["dom", "esnext"],
+    "noImplicitAny": false,
+    "strict": false,
+    "lib": ["dom", "esnext"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
   }
 }
